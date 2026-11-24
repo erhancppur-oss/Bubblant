@@ -1,0 +1,77 @@
+plugins {
+    id 'com.android.application'
+}
+
+// Release signing: create keystore.properties (see README) - never commit it.
+def keystorePropsFile = rootProject.file('keystore.properties')
+def keystoreProps = new Properties()
+if (keystorePropsFile.exists()) {
+    keystorePropsFile.withInputStream { keystoreProps.load(it) }
+}
+
+android {
+    namespace 'com.bubblant.game'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId 'com.bubblant.game'
+        minSdk 24
+        targetSdk 36
+        versionCode 1
+        versionName '1.0.0'
+    }
+
+    signingConfigs {
+        if (keystorePropsFile.exists()) {
+            release {
+                storeFile rootProject.file(keystoreProps['storeFile'])
+                storePassword keystoreProps['storePassword']
+                keyAlias keystoreProps['keyAlias']
+                keyPassword keystoreProps['keyPassword']
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            // Google official TEST ad ids
+            manifestPlaceholders = [admobAppId: 'ca-app-pub-3940256099942544~3347511713']
+            buildConfigField 'String', 'AD_BANNER', '"ca-app-pub-3940256099942544/6300978111"'
+            buildConfigField 'String', 'AD_INTERSTITIAL', '"ca-app-pub-3940256099942544/1033173712"'
+            buildConfigField 'String', 'AD_REWARDED', '"ca-app-pub-3940256099942544/5224354917"'
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // TODO: replace with your real AdMob ids (AdMob > Apps > Bubblant)
+            manifestPlaceholders = [admobAppId: (findProperty('ADMOB_APP_ID') ?: 'ca-app-pub-3940256099942544~3347511713')]
+            buildConfigField 'String', 'AD_BANNER', "\"${findProperty('ADMOB_BANNER') ?: 'ca-app-pub-3940256099942544/6300978111'}\""
+            buildConfigField 'String', 'AD_INTERSTITIAL', "\"${findProperty('ADMOB_INTERSTITIAL') ?: 'ca-app-pub-3940256099942544/1033173712'}\""
+            buildConfigField 'String', 'AD_REWARDED', "\"${findProperty('ADMOB_REWARDED') ?: 'ca-app-pub-3940256099942544/5224354917'}\""
+            if (keystorePropsFile.exists()) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    androidResources {
+        generateLocaleConfig true
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'com.google.android.gms:play-services-ads:24.4.0'
+    implementation 'com.google.android.ump:user-messaging-platform:3.2.0'
+    testImplementation 'junit:junit:4.13.2'
+}

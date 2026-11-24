@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Debug only: lets you open any level from adb for testing,
+     e.g.  adb shell am start -n com.bubblant.game/.GameActivity (extra int "level") -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <activity android:name=".GameActivity" android:exported="true" />
+    </application>
+</manifest>

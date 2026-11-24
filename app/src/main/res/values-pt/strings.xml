@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tagline">Incline. Flutue. Salve a formiga!</string>
+    <string name="play">▶ Jogar</string>
+    <string name="levels">Fases</string>
+    <string name="settings">Configurações</string>
+    <string name="back">Voltar</string>
+
+    <string name="set_music">Música</string>
+    <string name="set_sfx">Efeitos sonoros</string>
+    <string name="set_voice">Voz da formiga</string>
+    <string name="set_talk">Balões de fala</string>
+    <string name="set_vibration">Vibração</string>
+    <string name="set_touch">Controle por toque (em vez de inclinar)</string>
+    <string name="set_sensitivity">Sensibilidade</string>
+    <string name="set_language">Idioma</string>
+    <string name="set_hats">Chapéu da formiga</string>
+    <string name="set_privacy_options">Opções de privacidade</string>
+    <string name="set_privacy_policy">Política de privacidade</string>
+
+    <string name="level_n">Fase %d</string>
+    <string name="ready_tilt">Incline o celular para guiar a bolha!</string>
+    <string name="help">Socorro!</string>
+    <string name="air">AR</string>
+    <string name="paused">Pausado</string>
+    <string name="resume">Continuar</string>
+    <string name="restart">Reiniciar</string>
+    <string name="music_on">Música: Ligada</string>
+    <string name="music_off">Música: Desligada</string>
+    <string name="talk_on">Formiga fala: Sim</string>
+    <string name="talk_off">Formiga fala: Não</string>
+    <string name="level_complete">Sã e salva!</string>
+    <string name="game_complete">Você venceu as 60 fases! 🏆</string>
+    <string name="result_line">Açúcar: %1$d/3 · Tempo: %2$ds</string>
+    <string name="new_hat">🎩 Novo chapéu! Veja nas configurações.</string>
+    <string name="next">Próxima ▶</string>
+    <string name="replay">Jogar de novo</string>
+    <string name="popped">A bolha estourou!</string>
+    <string name="retry">Tentar de novo</string>
+    <string name="revive_ad">▶ Reviver (ver anúncio)</string>
+    <string name="skip_ad">▶ Pular fase (ver anúncio)</string>
+
+    <string name="tip_tilt">Incline devagar! Bater rápido na parede estoura a bolha.</string>
+    <string name="tip_touch">Segure o dedo onde a bolha deve ir.</string>
+    <string name="tip_urchin">Ouriços espetam. Não toque neles!</string>
+    <string name="tip_rescue">Uma amiga está presa numa folha! Pegue-a antes de voltar.</string>
+    <string name="tip_shrink">A bolha está vazando! Pegue bolhas de O₂ e corra.</string>
+    <string name="tip_fish">Peixes famintos patrulham aqui. Escolha a hora certa!</string>
+    <string name="tip_current">Correntezas te empurram. Use-as ou lute contra elas!</string>
+    <string name="tip_timed">Corrida contra o relógio!</string>
+    <string name="tip_wind">O vento sopra no lago. Cuidado com as rajadas!</string>
+    <string name="tip_dark">A caverna é escura… siga os vaga-lumes.</string>
+    <string name="tip_whirl">Redemoinhos te puxam. Fique na borda!</string>
+    <string name="tip_storm">Tempestade! Chuva e raios vão te sacudir.</string>
+    <string name="tip_eel">Algo caça no abismo… continue se movendo!</string>
+
+    <string-array name="world_names">
+        <item>Lagoa Ensolarada</item>
+        <item>Rio Preguiçoso</item>
+        <item>Lago Ventoso</item>
+        <item>Caverna Escura</item>
+        <item>Tempestade</item>
+        <item>O Abismo</item>
+    </string-array>
+    <string-array name="fail_causes">
+        <item>Você bateu forte demais!</item>
+        <item>Ai, espinhos!</item>
+        <item>Um peixe mordeu a bolha!</item>
+        <item>Engolida pelo redemoinho!</item>
+        <item>A bolha ficou sem ar!</item>
+        <item>O tempo acabou!</item>
+        <item>A enguia te pegou!</item>
+    </string-array>
+    <string-array name="hat_names">
+        <item>Nenhum</item>
+        <item>Boné</item>
+        <item>Laço</item>
+        <item>Pirata</item>
+        <item>Coroa</item>
+        <item>Mago</item>
+    </string-array>
+
+    <string-array name="say_left"><item>Esquerda!</item><item>Vai pra esquerda!</item></string-array>
+    <string-array name="say_right"><item>Direita!</item><item>Vai pra direita!</item></string-array>
+    <string-array name="say_up"><item>Pra cima!</item><item>Sobe!</item><item>Em frente!</item></string-array>
+    <string-array name="say_down"><item>Pra baixo!</item><item>Desce!</item></string-array>
+    <string-array name="say_wrong"><item>Não não não!</item><item>Caminho errado!</item><item>Pro outro lado!</item></string-array>
+    <string-array name="say_angry"><item>Você está me ouvindo?!</item><item>Eu disse o OUTRO lado!</item><item>Quer que eu me afogue?!</item><item>Sério?!</item></string-array>
+    <string-array name="say_good"><item>Boa!</item><item>Mandou bem!</item><item>Isso! Assim!</item><item>Você é demais!</item></string-array>
+    <string-array name="say_careful"><item>Cuidado!!</item><item>Rápido demais!</item><item>Devagar!</item></string-array>
+    <string-array name="say_ouch"><item>Ai!</item><item>Ei!</item><item>Bonk!</item></string-array>
+    <string-array name="say_thanks"><item>Obrigada! Você me salvou!</item><item>Lar doce lar! Valeu!</item><item>Meu herói! Obrigada!</item></string-array>
+    <string-array name="say_drown"><item>Glub glub…</item><item>Nããão… glub!</item><item>Eu não sei nadar!</item></string-array>
+    <string-array name="say_idle"><item>Alô? Incline o celular!</item><item>Já chegamos?</item><item>Tô ficando entediada…</item></string-array>
+    <string-array name="say_air"><item>Ar! Preciso de ar!</item><item>A bolha está encolhendo!</item></string-array>
+    <string-array name="say_wind"><item>Opa, vento!</item><item>Segura firme!</item></string-array>
+    <string-array name="say_scared"><item>Iiih!</item><item>Tô com medo!</item><item>Mamãe!</item></string-array>
+    <string-array name="say_friend"><item>Valeu, amigo! Sobe aí!</item><item>Uma amiga! Bem-vinda a bordo!</item></string-array>
+    <string-array name="say_need_friends"><item>Espera! Não podemos deixar nossos amigos!</item><item>Sem meus amigos não!</item></string-array>
+    <string-array name="say_hurry"><item>Depressa!</item><item>Mais rápido! Sem tempo!</item></string-array>
+    <string-array name="say_start"><item>Vamos lá!</item><item>Me leva pra casa, por favor!</item><item>Pronto? Incline!</item></string-array>
+    <string-array name="say_whirl"><item>Redemoinho! Sai daí!</item><item>Tô tonta!</item></string-array>
+    <string-array name="say_eel"><item>AAAH! Tem algo vindo!</item><item>Corre! CORRE!</item><item>O que foi isso?!</item></string-array>
+    <string-array name="say_fish"><item>Cuidado, um peixe!</item><item>Não deixa ele morder!</item></string-array>
+    <string-array name="say_almost"><item>Quase lá!</item><item>Estou vendo minha casa!</item></string-array>
+</resources>

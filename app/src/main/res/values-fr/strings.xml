@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tagline">Penche. Flotte. Sauve la fourmi !</string>
+    <string name="play">▶ Jouer</string>
+    <string name="levels">Niveaux</string>
+    <string name="settings">Paramètres</string>
+    <string name="back">Retour</string>
+
+    <string name="set_music">Musique</string>
+    <string name="set_sfx">Effets sonores</string>
+    <string name="set_voice">Voix de la fourmi</string>
+    <string name="set_talk">Bulles de dialogue</string>
+    <string name="set_vibration">Vibration</string>
+    <string name="set_touch">Contrôle tactile (au lieu de pencher)</string>
+    <string name="set_sensitivity">Sensibilité</string>
+    <string name="set_language">Langue</string>
+    <string name="set_hats">Chapeau de la fourmi</string>
+    <string name="set_privacy_options">Options de confidentialité</string>
+    <string name="set_privacy_policy">Politique de confidentialité</string>
+
+    <string name="level_n">Niveau %d</string>
+    <string name="ready_tilt">Penche ton téléphone pour diriger la bulle !</string>
+    <string name="help">À l\'aide !</string>
+    <string name="air">AIR</string>
+    <string name="paused">Pause</string>
+    <string name="resume">Reprendre</string>
+    <string name="restart">Recommencer</string>
+    <string name="music_on">Musique : Oui</string>
+    <string name="music_off">Musique : Non</string>
+    <string name="talk_on">La fourmi parle : Oui</string>
+    <string name="talk_off">La fourmi parle : Non</string>
+    <string name="level_complete">Saine et sauve !</string>
+    <string name="game_complete">Tu as fini les 60 niveaux ! 🏆</string>
+    <string name="result_line">Sucre : %1$d/3 · Temps : %2$ds</string>
+    <string name="new_hat">🎩 Nouveau chapeau ! Va voir les paramètres.</string>
+    <string name="next">Suivant ▶</string>
+    <string name="replay">Rejouer</string>
+    <string name="popped">La bulle a éclaté !</string>
+    <string name="retry">Réessayer</string>
+    <string name="revive_ad">▶ Revivre (voir une pub)</string>
+    <string name="skip_ad">▶ Passer le niveau (voir une pub)</string>
+
+    <string name="tip_tilt">Penche doucement ! Un choc trop rapide fait éclater la bulle.</string>
+    <string name="tip_touch">Garde le doigt là où la bulle doit aller.</string>
+    <string name="tip_urchin">Les oursins piquent. Ne les touche pas !</string>
+    <string name="tip_rescue">Une amie est coincée sur une feuille ! Récupère-la.</string>
+    <string name="tip_shrink">La bulle fuit ! Attrape des bulles d\'O₂ et dépêche-toi.</string>
+    <string name="tip_fish">Des poissons affamés patrouillent. Choisis le bon moment !</string>
+    <string name="tip_current">Les courants te poussent. Utilise-les ou résiste !</string>
+    <string name="tip_timed">Course contre la montre !</string>
+    <string name="tip_wind">Le vent souffle sur le lac. Attention aux rafales !</string>
+    <string name="tip_dark">La grotte est sombre… suis les lucioles.</string>
+    <string name="tip_whirl">Les tourbillons t\'aspirent. Reste sur le bord !</string>
+    <string name="tip_storm">Une tempête ! La pluie et les éclairs vont te secouer.</string>
+    <string name="tip_eel">Quelque chose chasse dans les abysses… ne t\'arrête pas !</string>
+
+    <string-array name="world_names">
+        <item>Mare Ensoleillée</item>
+        <item>Rivière Paresseuse</item>
+        <item>Lac Venteux</item>
+        <item>Grotte Sombre</item>
+        <item>Orage</item>
+        <item>Les Abysses</item>
+    </string-array>
+    <string-array name="fail_causes">
+        <item>Choc trop violent contre le mur !</item>
+        <item>Aïe, des piquants !</item>
+        <item>Un poisson a mordu la bulle !</item>
+        <item>Aspirée par le tourbillon !</item>
+        <item>La bulle n\'a plus d\'air !</item>
+        <item>Temps écoulé !</item>
+        <item>L\'anguille t\'a eue !</item>
+    </string-array>
+    <string-array name="hat_names">
+        <item>Aucun</item>
+        <item>Casquette</item>
+        <item>Nœud</item>
+        <item>Pirate</item>
+        <item>Couronne</item>
+        <item>Magicien</item>
+    </string-array>
+
+    <string-array name="say_left"><item>À gauche !</item><item>Va à gauche !</item><item>Gauche, gauche !</item></string-array>
+    <string-array name="say_right"><item>À droite !</item><item>Va à droite !</item></string-array>
+    <string-array name="say_up"><item>En haut !</item><item>Monte !</item><item>En avant !</item></string-array>
+    <string-array name="say_down"><item>En bas !</item><item>Descends !</item></string-array>
+    <string-array name="say_wrong"><item>Non non non !</item><item>Mauvais chemin !</item><item>De l\'autre côté !</item></string-array>
+    <string-array name="say_angry"><item>Tu m\'écoutes au moins ?!</item><item>J\'ai dit de l\'AUTRE côté !</item><item>Tu veux que je me noie ?!</item><item>Sérieusement ?!</item></string-array>
+    <string-array name="say_good"><item>Super !</item><item>Bravo !</item><item>Oui ! Comme ça !</item><item>Tu es doué !</item></string-array>
+    <string-array name="say_careful"><item>Attention !!</item><item>Trop vite !</item><item>Ralentis !</item></string-array>
+    <string-array name="say_ouch"><item>Aïe !</item><item>Hé !</item><item>Bonk !</item></string-array>
+    <string-array name="say_thanks"><item>Merci ! Tu m\'as sauvée !</item><item>Enfin à la maison ! Merci !</item><item>Mon héros ! Merci !</item></string-array>
+    <string-array name="say_drown"><item>Glou glou…</item><item>Nooon… glou !</item><item>Je ne sais pas nager !</item></string-array>
+    <string-array name="say_idle"><item>Allô ? Penche le téléphone !</item><item>On est bientôt arrivés ?</item><item>Je m\'ennuie…</item></string-array>
+    <string-array name="say_air"><item>De l\'air ! J\'ai besoin d\'air !</item><item>La bulle rétrécit !</item></string-array>
+    <string-array name="say_wind"><item>Oh, du vent !</item><item>Accroche-toi !</item></string-array>
+    <string-array name="say_scared"><item>Iiih !</item><item>J\'ai peur !</item><item>Maman !</item></string-array>
+    <string-array name="say_friend"><item>Merci l\'ami ! Monte !</item><item>Une amie ! Bienvenue à bord !</item></string-array>
+    <string-array name="say_need_friends"><item>Attends ! On ne laisse pas nos amis !</item><item>Pas sans mes amis !</item></string-array>
+    <string-array name="say_hurry"><item>Dépêche-toi !</item><item>Plus vite ! Pas le temps !</item></string-array>
+    <string-array name="say_start"><item>C\'est parti !</item><item>Ramène-moi à la maison !</item><item>Prêt ? Penche !</item></string-array>
+    <string-array name="say_whirl"><item>Tourbillon ! Éloigne-toi !</item><item>J\'ai le tournis !</item></string-array>
+    <string-array name="say_eel"><item>AAAH ! Quelque chose arrive !</item><item>Cours ! COURS !</item><item>C\'était quoi ça ?!</item></string-array>
+    <string-array name="say_fish"><item>Attention, un poisson !</item><item>Ne le laisse pas mordre !</item></string-array>
+    <string-array name="say_almost"><item>Presque !</item><item>Je vois la maison !</item></string-array>
+</resources>

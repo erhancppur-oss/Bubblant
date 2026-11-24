@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tagline">Kippen. Treiben. Rette die Ameise!</string>
+    <string name="play">▶ Spielen</string>
+    <string name="levels">Level</string>
+    <string name="settings">Einstellungen</string>
+    <string name="back">Zurück</string>
+
+    <string name="set_music">Musik</string>
+    <string name="set_sfx">Soundeffekte</string>
+    <string name="set_voice">Ameisenstimme</string>
+    <string name="set_talk">Sprechblasen</string>
+    <string name="set_vibration">Vibration</string>
+    <string name="set_touch">Touch-Steuerung (statt Kippen)</string>
+    <string name="set_sensitivity">Kipp-Empfindlichkeit</string>
+    <string name="set_language">Sprache</string>
+    <string name="set_hats">Hut der Ameise</string>
+    <string name="set_privacy_options">Datenschutzoptionen</string>
+    <string name="set_privacy_policy">Datenschutzerklärung</string>
+
+    <string name="level_n">Level %d</string>
+    <string name="ready_tilt">Kippe dein Handy, um die Blase zu lenken!</string>
+    <string name="help">Hilfe!</string>
+    <string name="air">LUFT</string>
+    <string name="paused">Pause</string>
+    <string name="resume">Weiter</string>
+    <string name="restart">Neustart</string>
+    <string name="music_on">Musik: An</string>
+    <string name="music_off">Musik: Aus</string>
+    <string name="talk_on">Ameise spricht: An</string>
+    <string name="talk_off">Ameise spricht: Aus</string>
+    <string name="level_complete">Sicher angekommen!</string>
+    <string name="game_complete">Du hast alle 60 Level geschafft! 🏆</string>
+    <string name="result_line">Zucker: %1$d/3 · Zeit: %2$ds</string>
+    <string name="new_hat">🎩 Neuer Hut! Schau in die Einstellungen.</string>
+    <string name="next">Weiter ▶</string>
+    <string name="replay">Nochmal</string>
+    <string name="popped">Blase geplatzt!</string>
+    <string name="retry">Nochmal versuchen</string>
+    <string name="revive_ad">▶ Wiederbeleben (Werbung)</string>
+    <string name="skip_ad">▶ Level überspringen (Werbung)</string>
+
+    <string name="tip_tilt">Sanft kippen! Zu schnell gegen die Wand und die Blase platzt.</string>
+    <string name="tip_touch">Halte den Finger dorthin, wo die Blase hin soll.</string>
+    <string name="tip_urchin">Seeigel sind stachelig. Nicht berühren!</string>
+    <string name="tip_rescue">Ein Freund sitzt auf einem Blatt fest! Hol ihn ab.</string>
+    <string name="tip_shrink">Die Blase verliert Luft! Sammle O₂-Blasen und beeil dich.</string>
+    <string name="tip_fish">Hungrige Fische patrouillieren hier. Gutes Timing!</string>
+    <string name="tip_current">Strömungen schieben dich. Nutze sie oder kämpfe dagegen!</string>
+    <string name="tip_timed">Rennen gegen die Zeit!</string>
+    <string name="tip_wind">Wind weht über den See. Achtung vor Böen!</string>
+    <string name="tip_dark">Die Höhle ist dunkel… folge den Glühwürmchen.</string>
+    <string name="tip_whirl">Strudel ziehen dich hinein. Bleib am Rand!</string>
+    <string name="tip_storm">Ein Sturm! Regen und Blitze schütteln dich durch.</string>
+    <string name="tip_eel">Etwas jagt im Abgrund… bleib in Bewegung!</string>
+
+    <string-array name="world_names">
+        <item>Sonniger Teich</item>
+        <item>Fauler Fluss</item>
+        <item>Windiger See</item>
+        <item>Dunkle Höhle</item>
+        <item>Gewittersturm</item>
+        <item>Der Abgrund</item>
+    </string-array>
+    <string-array name="fail_causes">
+        <item>Zu hart gegen die Wand!</item>
+        <item>Autsch, Stacheln!</item>
+        <item>Ein Fisch hat zugebissen!</item>
+        <item>Vom Strudel verschluckt!</item>
+        <item>Der Blase ging die Luft aus!</item>
+        <item>Die Zeit ist um!</item>
+        <item>Der Aal hat dich erwischt!</item>
+    </string-array>
+    <string-array name="hat_names">
+        <item>Keiner</item>
+        <item>Kappe</item>
+        <item>Schleife</item>
+        <item>Pirat</item>
+        <item>Krone</item>
+        <item>Zauberer</item>
+    </string-array>
+
+    <string-array name="say_left"><item>Links!</item><item>Nach links!</item><item>Links, links!</item></string-array>
+    <string-array name="say_right"><item>Rechts!</item><item>Nach rechts!</item></string-array>
+    <string-array name="say_up"><item>Hoch!</item><item>Nach oben!</item><item>Vorwärts!</item></string-array>
+    <string-array name="say_down"><item>Runter!</item><item>Nach unten!</item></string-array>
+    <string-array name="say_wrong"><item>Nein nein nein!</item><item>Falsche Richtung!</item><item>Andersrum!</item></string-array>
+    <string-array name="say_angry"><item>Hörst du mir überhaupt zu?!</item><item>Ich sagte die ANDERE Richtung!</item><item>Willst du, dass ich ertrinke?!</item><item>Im Ernst?!</item></string-array>
+    <string-array name="say_good"><item>Super!</item><item>Gut gemacht!</item><item>Ja! Genau so!</item><item>Du bist ein Naturtalent!</item></string-array>
+    <string-array name="say_careful"><item>Vorsicht!!</item><item>Zu schnell!</item><item>Langsamer!</item></string-array>
+    <string-array name="say_ouch"><item>Autsch!</item><item>Hey!</item><item>Bonk!</item></string-array>
+    <string-array name="say_thanks"><item>Danke! Du hast mich gerettet!</item><item>Endlich zu Hause! Danke!</item><item>Mein Held! Danke!</item></string-array>
+    <string-array name="say_drown"><item>Blubb blubb…</item><item>Neeein… blubb!</item><item>Ich kann nicht schwimmen!</item></string-array>
+    <string-array name="say_idle"><item>Hallo? Kipp das Handy!</item><item>Sind wir bald da?</item><item>Mir ist langweilig…</item></string-array>
+    <string-array name="say_air"><item>Luft! Ich brauche Luft!</item><item>Die Blase schrumpft!</item></string-array>
+    <string-array name="say_wind"><item>Huch, Wind!</item><item>Gut festhalten!</item></string-array>
+    <string-array name="say_scared"><item>Iiih!</item><item>Ich hab Angst!</item><item>Mama!</item></string-array>
+    <string-array name="say_friend"><item>Danke, Kumpel! Spring auf!</item><item>Ein Freund! Willkommen an Bord!</item></string-array>
+    <string-array name="say_need_friends"><item>Warte! Wir lassen keine Freunde zurück!</item><item>Nicht ohne meine Freunde!</item></string-array>
+    <string-array name="say_hurry"><item>Beeil dich!</item><item>Schneller! Keine Zeit!</item></string-array>
+    <string-array name="say_start"><item>Los geht\'s!</item><item>Bring mich bitte nach Hause!</item><item>Bereit? Kippen!</item></string-array>
+    <string-array name="say_whirl"><item>Strudel! Weg hier!</item><item>Mir wird schwindelig!</item></string-array>
+    <string-array name="say_eel"><item>AAAH! Da kommt was!</item><item>Lauf! LAUF!</item><item>Was war das?!</item></string-array>
+    <string-array name="say_fish"><item>Vorsicht, ein Fisch!</item><item>Lass ihn nicht beißen!</item></string-array>
+    <string-array name="say_almost"><item>Fast geschafft!</item><item>Ich sehe mein Zuhause!</item></string-array>
+</resources>

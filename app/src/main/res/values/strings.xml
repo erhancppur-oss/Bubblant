@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Bubblant</string>
+    <string name="tagline">Tilt. Float. Save the ant!</string>
+    <string name="play">▶ Play</string>
+    <string name="levels">Levels</string>
+    <string name="settings">Settings</string>
+    <string name="back">Back</string>
+
+    <string name="set_music">Music</string>
+    <string name="set_sfx">Sound effects</string>
+    <string name="set_voice">Ant voice</string>
+    <string name="set_talk">Speech bubbles</string>
+    <string name="set_vibration">Vibration</string>
+    <string name="set_touch">Touch control (instead of tilt)</string>
+    <string name="set_sensitivity">Tilt sensitivity</string>
+    <string name="set_language">Language</string>
+    <string name="set_hats">Ant\'s hat</string>
+    <string name="set_privacy_options">Privacy options</string>
+    <string name="set_privacy_policy">Privacy policy</string>
+
+    <string name="level_n">Level %d</string>
+    <string name="ready_tilt">Tilt your phone to steer the bubble!</string>
+    <string name="help">Help!</string>
+    <string name="air">AIR</string>
+    <string name="paused">Paused</string>
+    <string name="resume">Resume</string>
+    <string name="restart">Restart</string>
+    <string name="music_on">Music: On</string>
+    <string name="music_off">Music: Off</string>
+    <string name="talk_on">Ant talk: On</string>
+    <string name="talk_off">Ant talk: Off</string>
+    <string name="level_complete">Safe and sound!</string>
+    <string name="game_complete">You beat all 60 levels! 🏆</string>
+    <string name="result_line">Sugar: %1$d/3 · Time: %2$ds</string>
+    <string name="new_hat">🎩 New hat unlocked! Check Settings.</string>
+    <string name="next">Next ▶</string>
+    <string name="replay">Replay</string>
+    <string name="popped">Bubble popped!</string>
+    <string name="retry">Try again</string>
+    <string name="revive_ad">▶ Revive (watch ad)</string>
+    <string name="skip_ad">▶ Skip level (watch ad)</string>
+
+    <string name="tip_tilt">Tilt gently! Bump a wall too fast and the bubble pops.</string>
+    <string name="tip_touch">Hold your finger where you want the bubble to go.</string>
+    <string name="tip_urchin">Sea urchins are spiky. Don\'t touch them!</string>
+    <string name="tip_rescue">A friend is stuck on a leaf! Pick it up before going home.</string>
+    <string name="tip_shrink">The bubble is leaking! Grab O₂ bubbles and hurry.</string>
+    <string name="tip_fish">Hungry fish patrol here. Time your moves!</string>
+    <string name="tip_current">Currents push you around. Use them or fight them!</string>
+    <string name="tip_timed">Race against the clock!</string>
+    <string name="tip_wind">Wind blows across the lake. Watch out for gusts!</string>
+    <string name="tip_dark">It\'s dark in the cave… follow the fireflies.</string>
+    <string name="tip_whirl">Whirlpools suck you in. Stay on the edge!</string>
+    <string name="tip_storm">A storm! Rain drops and lightning will shake you.</string>
+    <string name="tip_eel">Something hunts in the abyss… keep moving!</string>
+
+    <string-array name="world_names">
+        <item>Sunny Pond</item>
+        <item>Lazy River</item>
+        <item>Windy Lake</item>
+        <item>Dark Cave</item>
+        <item>Thunder Storm</item>
+        <item>The Abyss</item>
+    </string-array>
+    <string-array name="fail_causes">
+        <item>You hit the wall too hard!</item>
+        <item>Ouch, spikes!</item>
+        <item>A fish bit the bubble!</item>
+        <item>Swallowed by the whirlpool!</item>
+        <item>The bubble ran out of air!</item>
+        <item>Time is up!</item>
+        <item>The eel got you!</item>
+    </string-array>
+    <string-array name="hat_names">
+        <item>None</item>
+        <item>Cap</item>
+        <item>Bow</item>
+        <item>Pirate</item>
+        <item>Crown</item>
+        <item>Wizard</item>
+    </string-array>
+
+    <!-- What the ant says -->
+    <string-array name="say_left"><item>Left!</item><item>Go left!</item><item>Left, left!</item></string-array>
+    <string-array name="say_right"><item>Right!</item><item>Go right!</item><item>To the right!</item></string-array>
+    <string-array name="say_up"><item>Up!</item><item>Go up!</item><item>Forward!</item></string-array>
+    <string-array name="say_down"><item>Down!</item><item>Go down!</item><item>Back down!</item></string-array>
+    <string-array name="say_wrong"><item>No no no!</item><item>Wrong way!</item><item>Nope! Other way!</item><item>Not there!</item></string-array>
+    <string-array name="say_angry"><item>Are you even listening?!</item><item>ARGH! I said the OTHER way!</item><item>Do you want me to drown?!</item><item>Seriously?!</item></string-array>
+    <string-array name="say_good"><item>Nice!</item><item>Great job!</item><item>Yes! Like that!</item><item>You\'re a natural!</item><item>Woo-hoo!</item></string-array>
+    <string-array name="say_careful"><item>Careful!!</item><item>Too fast!</item><item>Slow down!</item><item>Whoa, easy!</item></string-array>
+    <string-array name="say_ouch"><item>Ouch!</item><item>Hey!</item><item>Bonk!</item></string-array>
+    <string-array name="say_thanks"><item>Thank you! You saved me!</item><item>Home sweet home! Thanks!</item><item>My hero! Thank you!</item></string-array>
+    <string-array name="say_drown"><item>Glub glub…</item><item>Noooo… glub!</item><item>I can\'t swim!</item></string-array>
+    <string-array name="say_idle"><item>Hello? Tilt the phone!</item><item>Are we there yet?</item><item>I\'m getting bored…</item></string-array>
+    <string-array name="say_air"><item>Air! I need air!</item><item>The bubble is shrinking!</item><item>Hurry, grab an air bubble!</item></string-array>
+    <string-array name="say_wind"><item>Whoa, wind!</item><item>Hold on tight!</item><item>Windy!</item></string-array>
+    <string-array name="say_scared"><item>Eek!</item><item>I\'m scared!</item><item>Mommy!</item></string-array>
+    <string-array name="say_friend"><item>Thanks buddy! Hop on!</item><item>A friend! Welcome aboard!</item><item>Yay, you came for me!</item></string-array>
+    <string-array name="say_need_friends"><item>Wait! We can\'t leave our friends!</item><item>Not without my friends!</item></string-array>
+    <string-array name="say_hurry"><item>Hurry up!</item><item>Faster! No time!</item><item>Quick quick quick!</item></string-array>
+    <string-array name="say_start"><item>Let\'s go!</item><item>Take me home, please!</item><item>Ready? Tilt!</item><item>I believe in you!</item></string-array>
+    <string-array name="say_whirl"><item>Whirlpool! Get away!</item><item>I\'m getting dizzy!</item></string-array>
+    <string-array name="say_eel"><item>AAAH! Something is coming!</item><item>Run! RUN!</item><item>What was that?!</item></string-array>
+    <string-array name="say_fish"><item>Watch out, a fish!</item><item>Don\'t let it bite!</item></string-array>
+    <string-array name="say_almost"><item>Almost there!</item><item>I can see home!</item></string-array>
+</resources>

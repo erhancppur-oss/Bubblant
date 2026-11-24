@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tagline">Eğ. Yüz. Karıncayı kurtar!</string>
+    <string name="play">▶ Oyna</string>
+    <string name="levels">Bölümler</string>
+    <string name="settings">Ayarlar</string>
+    <string name="back">Geri</string>
+
+    <string name="set_music">Müzik</string>
+    <string name="set_sfx">Ses efektleri</string>
+    <string name="set_voice">Karınca sesi</string>
+    <string name="set_talk">Konuşma balonları</string>
+    <string name="set_vibration">Titreşim</string>
+    <string name="set_touch">Dokunmatik kontrol (eğme yerine)</string>
+    <string name="set_sensitivity">Eğme hassasiyeti</string>
+    <string name="set_language">Dil</string>
+    <string name="set_hats">Karıncanın şapkası</string>
+    <string name="set_privacy_options">Gizlilik seçenekleri</string>
+    <string name="set_privacy_policy">Gizlilik politikası</string>
+
+    <string name="level_n">Bölüm %d</string>
+    <string name="ready_tilt">Kabarcığı yönlendirmek için telefonu eğ!</string>
+    <string name="help">İmdat!</string>
+    <string name="air">HAVA</string>
+    <string name="paused">Duraklatıldı</string>
+    <string name="resume">Devam et</string>
+    <string name="restart">Yeniden başla</string>
+    <string name="music_on">Müzik: Açık</string>
+    <string name="music_off">Müzik: Kapalı</string>
+    <string name="talk_on">Karınca konuşması: Açık</string>
+    <string name="talk_off">Karınca konuşması: Kapalı</string>
+    <string name="level_complete">Sağ salim!</string>
+    <string name="game_complete">60 bölümün hepsini bitirdin! 🏆</string>
+    <string name="result_line">Şeker: %1$d/3 · Süre: %2$ds</string>
+    <string name="new_hat">🎩 Yeni şapka açıldı! Ayarlara bak.</string>
+    <string name="next">Sonraki ▶</string>
+    <string name="replay">Tekrar oyna</string>
+    <string name="popped">Kabarcık patladı!</string>
+    <string name="retry">Tekrar dene</string>
+    <string name="revive_ad">▶ Canlan (reklam izle)</string>
+    <string name="skip_ad">▶ Bölümü atla (reklam izle)</string>
+
+    <string name="tip_tilt">Yavaşça eğ! Duvara hızlı çarparsan kabarcık patlar.</string>
+    <string name="tip_touch">Parmağını kabarcığın gitmesini istediğin yere bas.</string>
+    <string name="tip_urchin">Deniz kestaneleri dikenli. Sakın dokunma!</string>
+    <string name="tip_rescue">Bir arkadaş yaprakta mahsur kaldı! Eve gitmeden onu al.</string>
+    <string name="tip_shrink">Kabarcık hava kaçırıyor! O₂ kabarcıklarını topla ve acele et.</string>
+    <string name="tip_fish">Burada aç balıklar dolaşıyor. Zamanlamana dikkat!</string>
+    <string name="tip_current">Akıntılar seni sürükler. Onları kullan ya da onlara karşı koy!</string>
+    <string name="tip_timed">Zamana karşı yarış!</string>
+    <string name="tip_wind">Gölde rüzgar esiyor. Ani esintilere dikkat!</string>
+    <string name="tip_dark">Mağara çok karanlık… ateş böceklerini takip et.</string>
+    <string name="tip_whirl">Girdaplar seni içine çeker. Kenarından geç!</string>
+    <string name="tip_storm">Fırtına! Yağmur damlaları ve şimşekler seni sarsacak.</string>
+    <string name="tip_eel">Derinlikte bir şey avlanıyor… durmadan ilerle!</string>
+
+    <string-array name="world_names">
+        <item>Güneşli Gölet</item>
+        <item>Tembel Nehir</item>
+        <item>Rüzgarlı Göl</item>
+        <item>Karanlık Mağara</item>
+        <item>Gök Gürültülü Fırtına</item>
+        <item>Dipsiz Derinlik</item>
+    </string-array>
+    <string-array name="fail_causes">
+        <item>Duvara çok sert çarptın!</item>
+        <item>Ay, dikenler!</item>
+        <item>Bir balık kabarcığı ısırdı!</item>
+        <item>Girdap seni yuttu!</item>
+        <item>Kabarcığın havası bitti!</item>
+        <item>Süre doldu!</item>
+        <item>Yılan balığı seni yakaladı!</item>
+    </string-array>
+    <string-array name="hat_names">
+        <item>Yok</item>
+        <item>Kasket</item>
+        <item>Fiyonk</item>
+        <item>Korsan</item>
+        <item>Taç</item>
+        <item>Büyücü</item>
+    </string-array>
+
+    <string-array name="say_left"><item>Sola!</item><item>Sola git!</item><item>Sol, sol!</item></string-array>
+    <string-array name="say_right"><item>Sağa!</item><item>Sağa git!</item><item>Sağa doğru!</item></string-array>
+    <string-array name="say_up"><item>Yukarı!</item><item>Yukarı çık!</item><item>İleri!</item></string-array>
+    <string-array name="say_down"><item>Aşağı!</item><item>Aşağı in!</item><item>Geri aşağı!</item></string-array>
+    <string-array name="say_wrong"><item>Hayır hayır hayır!</item><item>Yanlış yol!</item><item>Olmaz! Diğer tarafa!</item><item>Oraya değil!</item></string-array>
+    <string-array name="say_angry"><item>Beni dinliyor musun?!</item><item>Off! DİĞER taraf dedim!</item><item>Boğulmamı mı istiyorsun?!</item><item>Ciddi misin?!</item></string-array>
+    <string-array name="say_good"><item>Süper!</item><item>Harika gidiyorsun!</item><item>Evet! Aynen böyle!</item><item>Doğuştan yeteneklisin!</item><item>Yuppi!</item></string-array>
+    <string-array name="say_careful"><item>Dikkat!!</item><item>Çok hızlı!</item><item>Yavaşla!</item><item>Hoop, sakin!</item></string-array>
+    <string-array name="say_ouch"><item>Ay!</item><item>Hey!</item><item>Güm!</item></string-array>
+    <string-array name="say_thanks"><item>Teşekkürler! Beni kurtardın!</item><item>Evim güzel evim! Sağ ol!</item><item>Kahramanım! Teşekkür ederim!</item></string-array>
+    <string-array name="say_drown"><item>Glu glu…</item><item>Hayııır… glu!</item><item>Ben yüzme bilmiyorum!</item></string-array>
+    <string-array name="say_idle"><item>Alo? Telefonu eğsene!</item><item>Daha gelmedik mi?</item><item>Sıkılmaya başladım…</item></string-array>
+    <string-array name="say_air"><item>Hava! Havaya ihtiyacım var!</item><item>Kabarcık küçülüyor!</item><item>Çabuk, hava kabarcığı al!</item></string-array>
+    <string-array name="say_wind"><item>Vay, rüzgar!</item><item>Sıkı tutun!</item><item>Ne rüzgar ama!</item></string-array>
+    <string-array name="say_scared"><item>İiik!</item><item>Korkuyorum!</item><item>Anneciğim!</item></string-array>
+    <string-array name="say_friend"><item>Sağ ol dostum! Atla!</item><item>Bir arkadaş! Hoş geldin!</item><item>Yaşasın, beni almaya geldin!</item></string-array>
+    <string-array name="say_need_friends"><item>Dur! Arkadaşlarımızı bırakamayız!</item><item>Arkadaşlarım olmadan olmaz!</item></string-array>
+    <string-array name="say_hurry"><item>Acele et!</item><item>Daha hızlı! Vakit yok!</item><item>Çabuk çabuk çabuk!</item></string-array>
+    <string-array name="say_start"><item>Hadi gidelim!</item><item>Beni eve götür lütfen!</item><item>Hazır mısın? Eğ!</item><item>Sana inanıyorum!</item></string-array>
+    <string-array name="say_whirl"><item>Girdap! Uzaklaş!</item><item>Başım dönüyor!</item></string-array>
+    <string-array name="say_eel"><item>AAAH! Bir şey geliyor!</item><item>Kaç! KAÇ!</item><item>O da neydi?!</item></string-array>
+    <string-array name="say_fish"><item>Dikkat, balık!</item><item>Isırmasına izin verme!</item></string-array>
+    <string-array name="say_almost"><item>Az kaldı!</item><item>Evi görüyorum!</item></string-array>
+</resources>
