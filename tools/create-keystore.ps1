@@ -7,7 +7,8 @@ $keytool = "C:\Program Files\Android\Android Studio\jbr\bin\keytool.exe"
 $jks = Join-Path $root "upload.jks"
 if (Test-Path $jks) { Write-Host "upload.jks already exists - not overwriting."; exit 1 }
 
-$pass = Read-Host "Choose a keystore password (min 6 chars)"
+$secure = Read-Host "Choose a keystore password (min 6 chars)" -AsSecureString
+$pass = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($secure))
 & $keytool -genkeypair -v -keystore $jks -alias upload -keyalg RSA -keysize 2048 -validity 10000 `
     -storepass $pass -keypass $pass -dname "CN=Bubblant, OU=Games, O=Bubblant, C=TR"
 
