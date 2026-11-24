@@ -44,11 +44,11 @@ android {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            // TODO: replace with your real AdMob ids (AdMob > Apps > Bubblant)
-            manifestPlaceholders = [admobAppId: (findProperty('ADMOB_APP_ID') ?: 'ca-app-pub-3940256099942544~3347511713')]
-            buildConfigField 'String', 'AD_BANNER', "\"${findProperty('ADMOB_BANNER') ?: 'ca-app-pub-3940256099942544/6300978111'}\""
-            buildConfigField 'String', 'AD_INTERSTITIAL', "\"${findProperty('ADMOB_INTERSTITIAL') ?: 'ca-app-pub-3940256099942544/1033173712'}\""
-            buildConfigField 'String', 'AD_REWARDED', "\"${findProperty('ADMOB_REWARDED') ?: 'ca-app-pub-3940256099942544/5224354917'}\""
+            // Real AdMob ids (AdMob > Apps > Bubblant). Can be overridden with -PADMOB_* properties.
+            manifestPlaceholders = [admobAppId: (findProperty('ADMOB_APP_ID') ?: 'ca-app-pub-1210933263813150~3717822413')]
+            buildConfigField 'String', 'AD_BANNER', "\"${findProperty('ADMOB_BANNER') ?: 'ca-app-pub-1210933263813150/6008430489'}\""
+            buildConfigField 'String', 'AD_INTERSTITIAL', "\"${findProperty('ADMOB_INTERSTITIAL') ?: 'ca-app-pub-1210933263813150/3382267144'}\""
+            buildConfigField 'String', 'AD_REWARDED', "\"${findProperty('ADMOB_REWARDED') ?: 'ca-app-pub-1210933263813150/6942238205'}\""
             if (keystorePropsFile.exists()) {
                 signingConfig signingConfigs.release
             }

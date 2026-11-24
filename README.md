@@ -24,14 +24,7 @@ Outputs: `app/build/outputs/apk/debug/app-debug.apk`, `app/build/outputs/bundle/
 
 ## Before publishing on Google Play
 1. **Signing key** – run `tools\create-keystore.ps1` once. Back up `upload.jks` + `keystore.properties` (they are git-ignored). Enroll in *Play App Signing* when you upload the first bundle.
-2. **AdMob ids** – in AdMob create the app *Bubblant* (Android) and three ad units: Banner, Interstitial, Rewarded. Put the ids in `%USERPROFILE%\.gradle\gradle.properties` (or GitHub secrets):
-   ```properties
-   ADMOB_APP_ID=ca-app-pub-XXXXXXXX~YYYYYYYY
-   ADMOB_BANNER=ca-app-pub-XXXXXXXX/1111111111
-   ADMOB_INTERSTITIAL=ca-app-pub-XXXXXXXX/2222222222
-   ADMOB_REWARDED=ca-app-pub-XXXXXXXX/3333333333
-   ```
-   Debug builds always use Google's test ids — never click your own live ads.
+2. **AdMob ids** – done: app *Bubblant* (`ca-app-pub-1210933263813150~3717822413`) with Banner, Interstitial and Rewarded units, wired into release builds in `app/build.gradle`. After publishing, link the Play Store listing to the app in AdMob (Apps → Bubblant → Add store) so ad serving is no longer limited. Debug builds always use Google's test ids — never click your own live ads.
 3. **Privacy policy** – enable GitHub Pages (Settings → Pages → branch `main`, folder `/docs`) and put the URL `https://<user>.github.io/Bubblant/privacy.html` into `SettingsActivity.PRIVACY_URL` and the Play Console.
 4. **Consent message** – in AdMob → Privacy & messaging, create a GDPR message for the app.
 5. Play Console: content rating questionnaire, *Contains ads = Yes*, Data safety (advertising ID, collected by AdMob), target audience 13+.
