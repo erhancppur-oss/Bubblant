@@ -34,9 +34,21 @@ public class GameActivity extends AppCompatActivity implements GameWorld.Listene
     private GameView view;
     private FrameLayout overlay;
     private Phrases phrases;
-    private AntVoice voice;
+    private volatile AntVoice voice;
     private int levelNumber;
     private boolean finished;
+    private String voiceKey = "";
+
+    private String voiceKey() {
+        return AntLanguage.lang(this) + "|" + Prefs.antAccent() + "|" + Prefs.antVoice() + "|" + Prefs.antPitch();
+    }
+
+    private void hideSystemBars() {
+        androidx.core.view.WindowInsetsControllerCompat c =
+                androidx.core.view.WindowCompat.getInsetsController(getWindow(), getWindow().getDecorView());
+        c.hide(androidx.core.view.WindowInsetsCompat.Type.systemBars());
+        c.setSystemBarsBehavior(androidx.core.view.WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE);
+    }
 
     @Override
     protected void onCreate(Bundle b) {
@@ -57,8 +69,10 @@ public class GameActivity extends AppCompatActivity implements GameWorld.Listene
             return insets;
         });
 
-        phrases = new Phrases(getResources());
-        voice = new AntVoice(this, getResources().getConfiguration().getLocales().get(0));
+        phrases = new Phrases(AntLanguage.resources(this));
+        voiceKey = voiceKey();
+        voice = new AntVoice(this, AntLanguage.voiceLocale(this), Prefs.antVoice(), Prefs.antPitch());
+        hideSystemBars();
 
         getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
             @Override public void handleOnBackPressed() {
@@ -77,6 +91,7 @@ public class GameActivity extends AppCompatActivity implements GameWorld.Listene
         LevelSpec spec = LevelSpec.of(n);
         Level level = new Level(spec);
         GameWorld world = new GameWorld(level, phrases, this);
+        view.renderer.setWorld(spec.world);
         view.renderer.labels.level = getString(R.string.level_n, n);
         view.renderer.labels.world = Ui.worldName(this, spec.world);
         view.renderer.labels.ready = getString(R.string.ready_tilt);
@@ -89,6 +104,8 @@ public class GameActivity extends AppCompatActivity implements GameWorld.Listene
         }
         if (Prefs.control() == 1 && "tilt".equals(spec.tip)) tip = getString(R.string.tip_touch);
         view.renderer.labels.tip = tip;
+        view.renderer.labels.story = spec.story ? getResources().getStringArray(R.array.world_stories)[spec.world] : "";
+        world.readyTime = (spec.story || !tip.isEmpty()) ? 3.8f : 1.6f;
         view.renderer.showTalk = Prefs.talk();
         view.renderer.hat = Prefs.hat();
         view.setWorld(world);
@@ -102,6 +119,14 @@ public class GameActivity extends AppCompatActivity implements GameWorld.Listene
         super.onResume();
         view.resume();
         view.renderer.showTalk = Prefs.talk();
+        hideSystemBars();
+        if (!voiceKey().equals(voiceKey)) {
+            // ant voice settings changed while paused
+            voice.shutdown();
+            voiceKey = voiceKey();
+            phrases = new Phrases(AntLanguage.resources(this));
+            voice = new AntVoice(this, AntLanguage.voiceLocale(this), Prefs.antVoice(), Prefs.antPitch());
+        }
     }
 
     @Override

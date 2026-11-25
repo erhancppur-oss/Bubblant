@@ -30,7 +30,6 @@
     <string name="talk_on">Formiga fala: Sim</string>
     <string name="talk_off">Formiga fala: Não</string>
     <string name="level_complete">Sã e salva!</string>
-    <string name="game_complete">Você venceu as 60 fases! 🏆</string>
     <string name="result_line">Açúcar: %1$d/3 · Tempo: %2$ds</string>
     <string name="new_hat">🎩 Novo chapéu! Veja nas configurações.</string>
     <string name="next">Próxima ▶</string>
@@ -42,35 +41,11 @@
 
     <string name="tip_tilt">Incline devagar! Bater rápido na parede estoura a bolha.</string>
     <string name="tip_touch">Segure o dedo onde a bolha deve ir.</string>
-    <string name="tip_urchin">Ouriços espetam. Não toque neles!</string>
     <string name="tip_rescue">Uma amiga está presa numa folha! Pegue-a antes de voltar.</string>
     <string name="tip_shrink">A bolha está vazando! Pegue bolhas de O₂ e corra.</string>
-    <string name="tip_fish">Peixes famintos patrulham aqui. Escolha a hora certa!</string>
     <string name="tip_current">Correntezas te empurram. Use-as ou lute contra elas!</string>
     <string name="tip_timed">Corrida contra o relógio!</string>
     <string name="tip_wind">O vento sopra no lago. Cuidado com as rajadas!</string>
-    <string name="tip_dark">A caverna é escura… siga os vaga-lumes.</string>
-    <string name="tip_whirl">Redemoinhos te puxam. Fique na borda!</string>
-    <string name="tip_storm">Tempestade! Chuva e raios vão te sacudir.</string>
-    <string name="tip_eel">Algo caça no abismo… continue se movendo!</string>
-
-    <string-array name="world_names">
-        <item>Lagoa Ensolarada</item>
-        <item>Rio Preguiçoso</item>
-        <item>Lago Ventoso</item>
-        <item>Caverna Escura</item>
-        <item>Tempestade</item>
-        <item>O Abismo</item>
-    </string-array>
-    <string-array name="fail_causes">
-        <item>Você bateu forte demais!</item>
-        <item>Ai, espinhos!</item>
-        <item>Um peixe mordeu a bolha!</item>
-        <item>Engolida pelo redemoinho!</item>
-        <item>A bolha ficou sem ar!</item>
-        <item>O tempo acabou!</item>
-        <item>A enguia te pegou!</item>
-    </string-array>
     <string-array name="hat_names">
         <item>Nenhum</item>
         <item>Boné</item>
@@ -101,6 +76,5 @@
     <string-array name="say_start"><item>Vamos lá!</item><item>Me leva pra casa, por favor!</item><item>Pronto? Incline!</item></string-array>
     <string-array name="say_whirl"><item>Redemoinho! Sai daí!</item><item>Tô tonta!</item></string-array>
     <string-array name="say_eel"><item>AAAH! Tem algo vindo!</item><item>Corre! CORRE!</item><item>O que foi isso?!</item></string-array>
-    <string-array name="say_fish"><item>Cuidado, um peixe!</item><item>Não deixa ele morder!</item></string-array>
     <string-array name="say_almost"><item>Quase lá!</item><item>Estou vendo minha casa!</item></string-array>
 </resources>

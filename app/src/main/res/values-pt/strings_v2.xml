@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="game_complete">Você venceu as 120 fases! 🏆</string>
+
+    <string name="tip_urchin">Coisas pontudas estouram a bolha. Não toque nelas!</string>
+    <string name="tip_fish">Algo nada de um lado para o outro. Escolha a hora certa!</string>
+    <string name="tip_whirl">Um ralo ou redemoinho te puxa. Fique na borda!</string>
+    <string name="tip_eel">Algo está te caçando… continue se movendo!</string>
+    <string name="tip_dark">Está escuro… siga os vaga-lumes.</string>
+    <string name="tip_storm">A chuva e os raios vão sacudir a bolha!</string>
+
+    <string-array name="world_names">
+        <item>Poça do jardim</item>
+        <item>Pia da cozinha</item>
+        <item>Banheira</item>
+        <item>Aquário</item>
+        <item>Lago do jardim</item>
+        <item>Piscina</item>
+        <item>Chafariz do parque</item>
+        <item>Arrozal</item>
+        <item>Poça de maré</item>
+        <item>Lago na tempestade</item>
+        <item>Bueiro</item>
+        <item>Porão alagado</item>
+    </string-array>
+
+    <string-array name="world_stories">
+        <item>Depois da chuva, a formiga ficou presa numa poça. Leve-a até a folha seca!</item>
+        <item>Ops! A formiga caiu na pia. Cuidado com a torneira e o ralo, chegue à esponja!</item>
+        <item>Hora do banho! Os patinhos de borracha passeiam e a tampa foi tirada. Chegue à saboneteira!</item>
+        <item>A formiga caiu no aquário. Os peixinhos são curiosos, o filtro empurra e a bomba faz bolhas.</item>
+        <item>Um lago com vento. Sapos famintos observam das vitórias-régias…</item>
+        <item>A piscina abriu! Os jatos te empurram e o robô limpador nunca para.</item>
+        <item>O chafariz espirra água para todo lado. Moedas esperam na ilha de pedra.</item>
+        <item>Um arrozal alagado. O vento varre a água, camarões e sapos por toda parte.</item>
+        <item>Maré baixa na praia. Caranguejos patrulham, ouriços se escondem e as ondas chegam.</item>
+        <item>Tempestade no lago! Trovões, chuva e piranhas. Chegue ao tronco flutuante!</item>
+        <item>Levada para o bueiro. Está escuro, há ratos e a correnteza é forte.</item>
+        <item>O porão alagou e é noite. Tem algo aqui embaixo com a gente… encontre a escada!</item>
+    </string-array>
+
+    <string-array name="fail_causes">
+        <item>Você bateu forte demais!</item>
+        <item>Ai, algo pontudo!</item>
+        <item>Bateu na bolha!</item>
+        <item>Engolida pelo redemoinho!</item>
+        <item>A bolha ficou sem ar!</item>
+        <item>O tempo acabou!</item>
+        <item>Te pegou!</item>
+    </string-array>
+
+    <string-array name="say_fish"><item>Cuidado!</item><item>Não deixa encostar na gente!</item><item>Atenção, está vindo!</item></string-array>
+
+    <string name="set_ant_voice">🐜 Voz da formiga</string>
+    <string name="set_ant_lang">Idioma da formiga</string>
+    <string name="same_as_game">Igual ao jogo</string>
+    <string name="set_accent">Sotaque</string>
+    <string name="set_voice_style">Tom de voz</string>
+    <string name="set_voice_pick">Voz</string>
+    <string name="voice_auto">Automática</string>
+    <string name="voice_n">Voz %d</string>
+    <string name="test_voice">🔊 Testar voz</string>
+    <string name="voice_missing">Este idioma não está instalado na conversão de texto em voz do celular.</string>
+    <string name="install_voice">Instalar dados de voz</string>
+    <string-array name="voice_styles">
+        <item>Fofa (aguda)</item>
+        <item>Normal</item>
+        <item>Grave</item>
+    </string-array>
+</resources>

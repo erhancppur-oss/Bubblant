@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="game_complete">You beat all 120 levels! 🏆</string>
+
+    <string name="tip_urchin">Sharp things pop the bubble. Don\'t touch them!</string>
+    <string name="tip_fish">Something swims back and forth here. Time your moves!</string>
+    <string name="tip_whirl">A drain or whirlpool pulls you in. Stay on the edge!</string>
+    <string name="tip_eel">Something is hunting you… keep moving!</string>
+    <string name="tip_dark">It\'s dark… follow the fireflies.</string>
+    <string name="tip_storm">Rain drops and lightning will shake the bubble!</string>
+
+    <string-array name="world_names">
+        <item>Garden Puddle</item>
+        <item>Kitchen Sink</item>
+        <item>Bathtub</item>
+        <item>Aquarium</item>
+        <item>Garden Pond</item>
+        <item>Swimming Pool</item>
+        <item>Park Fountain</item>
+        <item>Rice Paddy</item>
+        <item>Tide Pool</item>
+        <item>Thunderstorm Lake</item>
+        <item>Storm Drain</item>
+        <item>Flooded Basement</item>
+    </string-array>
+
+    <string-array name="world_stories">
+        <item>After the rain, the ant got stuck in a garden puddle. Float it to the dry leaf!</item>
+        <item>Oops! The ant was washed into the kitchen sink. Watch the tap stream and the drain, reach the sponge!</item>
+        <item>Bath time! Rubber ducks are cruising and the plug is out. Get to the soap dish!</item>
+        <item>The ant fell into the aquarium. Goldfish are curious, the filter pushes, the pump makes air bubbles.</item>
+        <item>A windy garden pond. Hungry frogs are watching from the lily pads…</item>
+        <item>The pool is open! Jets push you around and the cleaning robot never stops.</item>
+        <item>The park fountain splashes everywhere. Wish coins wait on the stone island.</item>
+        <item>A flooded rice paddy. Wind sweeps the water, shrimps and frogs are everywhere.</item>
+        <item>Low tide at the beach. Crabs patrol, sea urchins hide and waves rush in.</item>
+        <item>A storm on the lake! Thunder, rain and wild piranhas. Reach the floating log!</item>
+        <item>Washed into the storm drain. It\'s dark, rats are around and the current is strong.</item>
+        <item>The basement is flooded and it\'s night. Something is down there with us… find the stairs!</item>
+    </string-array>
+
+    <string-array name="fail_causes">
+        <item>You hit the wall too hard!</item>
+        <item>Ouch, something sharp!</item>
+        <item>It bumped into the bubble!</item>
+        <item>Swallowed by the swirl!</item>
+        <item>The bubble ran out of air!</item>
+        <item>Time is up!</item>
+        <item>It caught you!</item>
+    </string-array>
+
+    <string-array name="say_fish"><item>Watch out!</item><item>Don\'t let it touch us!</item><item>Careful, it\'s coming!</item></string-array>
+
+    <!-- ant voice settings -->
+    <string name="set_ant_voice">🐜 Ant voice</string>
+    <string name="set_ant_lang">Ant\'s language</string>
+    <string name="same_as_game">Same as the game</string>
+    <string name="set_accent">Accent</string>
+    <string name="set_voice_style">Voice style</string>
+    <string name="set_voice_pick">Voice</string>
+    <string name="voice_auto">Automatic</string>
+    <string name="voice_n">Voice %d</string>
+    <string name="test_voice">🔊 Test voice</string>
+    <string name="voice_missing">This language isn\'t installed in your phone\'s text-to-speech.</string>
+    <string name="install_voice">Install voice data</string>
+    <string-array name="voice_styles">
+        <item>Cute (high)</item>
+        <item>Normal</item>
+        <item>Deep</item>
+    </string-array>
+</resources>

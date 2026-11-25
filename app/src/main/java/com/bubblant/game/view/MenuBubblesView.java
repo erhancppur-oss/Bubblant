@@ -79,18 +79,29 @@ public final class MenuBubblesView extends View {
         }
         if (showAnt) {
             float cx = W / 2f + (float) Math.sin(t * 0.8f) * W * 0.06f;
-            float cy = H * 0.24f + (float) Math.sin(t * 1.3f) * 14;
-            float r = W * 0.15f;
-            p.setShader(new RadialGradient(cx - r * 0.3f, cy - r * 0.3f, r * 1.3f,
-                    new int[]{0x66FFFFFF, 0x22B3E5FC, 0x6681D4FA}, new float[]{0, 0.6f, 1}, Shader.TileMode.CLAMP));
+            float cy = H * 0.27f + (float) Math.sin(t * 1.3f) * 14;
+            float r = W * 0.16f;
+            float facing = (float) Math.cos(t * 0.8f) >= 0 ? 1 : -1;
+            p.setColor(0x33000000);
+            c.drawOval(cx - r * 0.8f, cy + r * 0.55f, cx + r, cy + r * 1.05f, p);
+            p.setShader(new RadialGradient(cx - r * 0.28f, cy - r * 0.32f, r * 1.3f,
+                    new int[]{0x14FFFFFF, 0x1AB3E5FC, 0x33E1F5FE, 0x88FFFFFF}, new float[]{0f, 0.55f, 0.82f, 1f}, Shader.TileMode.CLAMP));
             c.drawCircle(cx, cy, r, p);
             p.setShader(null);
-            s.setColor(0xDDFFFFFF);
-            s.setStrokeWidth(5);
+            s.setShader(new android.graphics.SweepGradient(cx, cy, new int[]{0x66FF80AB, 0x6680D8FF, 0x66B9F6CA, 0x66FFE57F, 0x66EA80FC, 0x66FF80AB}, null));
+            s.setStrokeWidth(r * 0.09f);
+            c.drawCircle(cx, cy, r * 0.95f, s);
+            s.setShader(null);
+            s.setColor(0xCCFFFFFF);
+            s.setStrokeWidth(4);
             c.drawCircle(cx, cy, r, s);
-            p.setColor(0xDDFFFFFF);
-            c.drawOval(cx - r * 0.65f, cy - r * 0.7f, cx - r * 0.15f, cy - r * 0.35f, p);
-            ant.draw(c, cx, cy, r * 0.8f, null, t, Prefs.hat(), 0, 255, false);
+            p.setColor(0xCCFFFFFF);
+            c.drawOval(cx - r * 0.7f, cy - r * 0.7f, cx - r * 0.12f, cy - r * 0.22f, p);
+            // the ant stands on top of the bubble
+            float feet = cy - r * 0.36f;
+            p.setColor(0x40000000);
+            c.drawOval(cx - r * 0.7f, feet - r * 0.04f, cx + r * 0.6f, feet + r * 0.1f, p);
+            ant.draw(c, cx, feet, r * 0.75f, null, t, Prefs.hat(), 0, 255, false, facing);
         }
         postInvalidateOnAnimation();
     }

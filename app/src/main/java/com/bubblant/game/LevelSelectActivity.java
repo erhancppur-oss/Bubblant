@@ -23,7 +23,6 @@ import com.bubblant.game.engine.LevelSpec;
 import com.bubblant.game.view.MenuBubblesView;
 
 public class LevelSelectActivity extends AppCompatActivity {
-    private static final int[] WORLD_COLORS = {0xFF29B6F6, 0xFF26A69A, 0xFF5C6BC0, 0xFF6D4C41, 0xFF455A64, 0xFF4A148C};
     private LinearLayout list;
     private FrameLayout banner;
 
@@ -44,6 +43,8 @@ public class LevelSelectActivity extends AppCompatActivity {
         banner = new FrameLayout(this);
         root.addView(banner, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT, Gravity.BOTTOM));
         setContentView(root);
+        Ui.padForSystemBars(scroll);
+        Ui.padForSystemBars(banner);
         AdManager.loadBanner(this, banner);
     }
 
@@ -79,7 +80,7 @@ public class LevelSelectActivity extends AppCompatActivity {
                 t.setTextSize(TypedValue.COMPLEX_UNIT_SP, open ? 18 : 20);
                 GradientDrawable bgd = new GradientDrawable();
                 bgd.setShape(GradientDrawable.OVAL);
-                bgd.setColor(open ? WORLD_COLORS[w] : 0x66000000);
+                bgd.setColor(open ? com.bubblant.game.engine.WorldTheme.of(w).waterBottom : 0x66000000);
                 bgd.setStroke(Ui.dp(this, 3), n == unlocked ? 0xFFFFC107 : 0xAAFFFFFF);
                 t.setBackground(bgd);
                 GridLayout.LayoutParams lp = new GridLayout.LayoutParams();

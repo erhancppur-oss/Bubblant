@@ -37,6 +37,22 @@ public final class Prefs {
     public static int sensitivity() { return sp.getInt("sens", 100); }
     public static void setSensitivity(int v) { sp.edit().putInt("sens", v).apply(); }
 
+    /** Language the ant speaks: "" = same as the game, otherwise "en", "tr", ... */
+    public static String antLang() { return sp.getString("ant_lang", ""); }
+    public static void setAntLang(String v) { sp.edit().putString("ant_lang", v).remove("ant_accent").remove("ant_voice").apply(); }
+
+    /** Accent as a locale tag (e.g. "en-GB"); "" = default for the language. */
+    public static String antAccent() { return sp.getString("ant_accent", ""); }
+    public static void setAntAccent(String v) { sp.edit().putString("ant_accent", v).remove("ant_voice").apply(); }
+
+    /** Text-to-speech voice name; "" = automatic. */
+    public static String antVoice() { return sp.getString("ant_voice", ""); }
+    public static void setAntVoice(String v) { sp.edit().putString("ant_voice", v).apply(); }
+
+    /** 0 = cute (high), 1 = normal, 2 = deep */
+    public static int antPitch() { return sp.getInt("ant_pitch", 0); }
+    public static void setAntPitch(int v) { sp.edit().putInt("ant_pitch", v).apply(); }
+
     public static int hat() { return sp.getInt("hat", 0); }
     public static void setHat(int v) { sp.edit().putInt("hat", v).apply(); }
 

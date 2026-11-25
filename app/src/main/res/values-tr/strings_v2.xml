@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="game_complete">120 bölümün hepsini bitirdin! 🏆</string>
+
+    <string name="tip_urchin">Sivri şeyler kabarcığı patlatır. Sakın dokunma!</string>
+    <string name="tip_fish">Burada bir şey ileri geri yüzüyor. Zamanlamana dikkat!</string>
+    <string name="tip_whirl">Gider ya da girdap seni içine çeker. Kenarından geç!</string>
+    <string name="tip_eel">Bir şey seni kovalıyor… durmadan ilerle!</string>
+    <string name="tip_dark">Çok karanlık… ateş böceklerini takip et.</string>
+    <string name="tip_storm">Yağmur damlaları ve şimşek kabarcığı sarsacak!</string>
+
+    <string-array name="world_names">
+        <item>Bahçe Su Birikintisi</item>
+        <item>Mutfak Lavabosu</item>
+        <item>Küvet</item>
+        <item>Akvaryum</item>
+        <item>Bahçe Havuzu</item>
+        <item>Yüzme Havuzu</item>
+        <item>Park Çeşmesi</item>
+        <item>Pirinç Tarlası</item>
+        <item>Kayalık Gölcük</item>
+        <item>Fırtınalı Göl</item>
+        <item>Yağmur Kanalı</item>
+        <item>Su Basmış Bodrum</item>
+    </string-array>
+
+    <string-array name="world_stories">
+        <item>Yağmurdan sonra karınca bahçedeki su birikintisinde mahsur kaldı. Onu kuru yaprağa taşı!</item>
+        <item>Eyvah! Karınca mutfak lavabosuna sürüklendi. Musluk suyuna ve gidere dikkat, süngere ulaş!</item>
+        <item>Banyo zamanı! Plastik ördekler geziyor, tıpa çekilmiş. Sabunluğa ulaş!</item>
+        <item>Karınca akvaryuma düştü. Japon balıkları meraklı, filtre itiyor, pompa hava kabarcığı çıkarıyor.</item>
+        <item>Rüzgarlı bir bahçe havuzu. Aç kurbağalar nilüferlerden bakıyor…</item>
+        <item>Havuz açıldı! Su jetleri seni itiyor, temizlik robotu hiç durmuyor.</item>
+        <item>Park çeşmesi her yere su sıçratıyor. Dilek paraları taş adacıkta bekliyor.</item>
+        <item>Su basmış bir pirinç tarlası. Rüzgar suyu süpürüyor, karides ve kurbağalar her yerde.</item>
+        <item>Sahilde cezir zamanı. Yengeçler devriyede, deniz kestaneleri saklanıyor, dalgalar geliyor.</item>
+        <item>Gölde fırtına! Gök gürültüsü, yağmur ve azgın piranalar. Yüzen kütüğe ulaş!</item>
+        <item>Yağmur kanalına sürüklendin. Karanlık, fareler etrafta ve akıntı çok güçlü.</item>
+        <item>Bodrumu su basmış ve gece olmuş. Aşağıda bizimle bir şey var… merdiveni bul!</item>
+    </string-array>
+
+    <string-array name="fail_causes">
+        <item>Duvara çok sert çarptın!</item>
+        <item>Ay, sivri bir şey!</item>
+        <item>Kabarcığa çarptı!</item>
+        <item>Girdap seni yuttu!</item>
+        <item>Kabarcığın havası bitti!</item>
+        <item>Süre doldu!</item>
+        <item>Seni yakaladı!</item>
+    </string-array>
+
+    <string-array name="say_fish"><item>Dikkat!</item><item>Bize dokunmasın!</item><item>Dikkat et, geliyor!</item></string-array>
+
+    <string name="set_ant_voice">🐜 Karınca sesi</string>
+    <string name="set_ant_lang">Karıncanın dili</string>
+    <string name="same_as_game">Oyunla aynı</string>
+    <string name="set_accent">Aksan</string>
+    <string name="set_voice_style">Ses tonu</string>
+    <string name="set_voice_pick">Ses</string>
+    <string name="voice_auto">Otomatik</string>
+    <string name="voice_n">Ses %d</string>
+    <string name="test_voice">🔊 Sesi dene</string>
+    <string name="voice_missing">Bu dil telefonunun metin okuma (TTS) motorunda yüklü değil.</string>
+    <string name="install_voice">Ses verisini yükle</string>
+    <string-array name="voice_styles">
+        <item>Sevimli (ince)</item>
+        <item>Normal</item>
+        <item>Kalın</item>
+    </string-array>
+</resources>

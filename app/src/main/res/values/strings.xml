@@ -31,7 +31,6 @@
     <string name="talk_on">Ant talk: On</string>
     <string name="talk_off">Ant talk: Off</string>
     <string name="level_complete">Safe and sound!</string>
-    <string name="game_complete">You beat all 60 levels! 🏆</string>
     <string name="result_line">Sugar: %1$d/3 · Time: %2$ds</string>
     <string name="new_hat">🎩 New hat unlocked! Check Settings.</string>
     <string name="next">Next ▶</string>
@@ -43,35 +42,11 @@
 
     <string name="tip_tilt">Tilt gently! Bump a wall too fast and the bubble pops.</string>
     <string name="tip_touch">Hold your finger where you want the bubble to go.</string>
-    <string name="tip_urchin">Sea urchins are spiky. Don\'t touch them!</string>
     <string name="tip_rescue">A friend is stuck on a leaf! Pick it up before going home.</string>
     <string name="tip_shrink">The bubble is leaking! Grab O₂ bubbles and hurry.</string>
-    <string name="tip_fish">Hungry fish patrol here. Time your moves!</string>
     <string name="tip_current">Currents push you around. Use them or fight them!</string>
     <string name="tip_timed">Race against the clock!</string>
     <string name="tip_wind">Wind blows across the lake. Watch out for gusts!</string>
-    <string name="tip_dark">It\'s dark in the cave… follow the fireflies.</string>
-    <string name="tip_whirl">Whirlpools suck you in. Stay on the edge!</string>
-    <string name="tip_storm">A storm! Rain drops and lightning will shake you.</string>
-    <string name="tip_eel">Something hunts in the abyss… keep moving!</string>
-
-    <string-array name="world_names">
-        <item>Sunny Pond</item>
-        <item>Lazy River</item>
-        <item>Windy Lake</item>
-        <item>Dark Cave</item>
-        <item>Thunder Storm</item>
-        <item>The Abyss</item>
-    </string-array>
-    <string-array name="fail_causes">
-        <item>You hit the wall too hard!</item>
-        <item>Ouch, spikes!</item>
-        <item>A fish bit the bubble!</item>
-        <item>Swallowed by the whirlpool!</item>
-        <item>The bubble ran out of air!</item>
-        <item>Time is up!</item>
-        <item>The eel got you!</item>
-    </string-array>
     <string-array name="hat_names">
         <item>None</item>
         <item>Cap</item>
@@ -103,6 +78,5 @@
     <string-array name="say_start"><item>Let\'s go!</item><item>Take me home, please!</item><item>Ready? Tilt!</item><item>I believe in you!</item></string-array>
     <string-array name="say_whirl"><item>Whirlpool! Get away!</item><item>I\'m getting dizzy!</item></string-array>
     <string-array name="say_eel"><item>AAAH! Something is coming!</item><item>Run! RUN!</item><item>What was that?!</item></string-array>
-    <string-array name="say_fish"><item>Watch out, a fish!</item><item>Don\'t let it bite!</item></string-array>
     <string-array name="say_almost"><item>Almost there!</item><item>I can see home!</item></string-array>
 </resources>

@@ -30,7 +30,6 @@
     <string name="talk_on">Karınca konuşması: Açık</string>
     <string name="talk_off">Karınca konuşması: Kapalı</string>
     <string name="level_complete">Sağ salim!</string>
-    <string name="game_complete">60 bölümün hepsini bitirdin! 🏆</string>
     <string name="result_line">Şeker: %1$d/3 · Süre: %2$ds</string>
     <string name="new_hat">🎩 Yeni şapka açıldı! Ayarlara bak.</string>
     <string name="next">Sonraki ▶</string>
@@ -42,35 +41,11 @@
 
     <string name="tip_tilt">Yavaşça eğ! Duvara hızlı çarparsan kabarcık patlar.</string>
     <string name="tip_touch">Parmağını kabarcığın gitmesini istediğin yere bas.</string>
-    <string name="tip_urchin">Deniz kestaneleri dikenli. Sakın dokunma!</string>
     <string name="tip_rescue">Bir arkadaş yaprakta mahsur kaldı! Eve gitmeden onu al.</string>
     <string name="tip_shrink">Kabarcık hava kaçırıyor! O₂ kabarcıklarını topla ve acele et.</string>
-    <string name="tip_fish">Burada aç balıklar dolaşıyor. Zamanlamana dikkat!</string>
     <string name="tip_current">Akıntılar seni sürükler. Onları kullan ya da onlara karşı koy!</string>
     <string name="tip_timed">Zamana karşı yarış!</string>
     <string name="tip_wind">Gölde rüzgar esiyor. Ani esintilere dikkat!</string>
-    <string name="tip_dark">Mağara çok karanlık… ateş böceklerini takip et.</string>
-    <string name="tip_whirl">Girdaplar seni içine çeker. Kenarından geç!</string>
-    <string name="tip_storm">Fırtına! Yağmur damlaları ve şimşekler seni sarsacak.</string>
-    <string name="tip_eel">Derinlikte bir şey avlanıyor… durmadan ilerle!</string>
-
-    <string-array name="world_names">
-        <item>Güneşli Gölet</item>
-        <item>Tembel Nehir</item>
-        <item>Rüzgarlı Göl</item>
-        <item>Karanlık Mağara</item>
-        <item>Gök Gürültülü Fırtına</item>
-        <item>Dipsiz Derinlik</item>
-    </string-array>
-    <string-array name="fail_causes">
-        <item>Duvara çok sert çarptın!</item>
-        <item>Ay, dikenler!</item>
-        <item>Bir balık kabarcığı ısırdı!</item>
-        <item>Girdap seni yuttu!</item>
-        <item>Kabarcığın havası bitti!</item>
-        <item>Süre doldu!</item>
-        <item>Yılan balığı seni yakaladı!</item>
-    </string-array>
     <string-array name="hat_names">
         <item>Yok</item>
         <item>Kasket</item>
@@ -101,6 +76,5 @@
     <string-array name="say_start"><item>Hadi gidelim!</item><item>Beni eve götür lütfen!</item><item>Hazır mısın? Eğ!</item><item>Sana inanıyorum!</item></string-array>
     <string-array name="say_whirl"><item>Girdap! Uzaklaş!</item><item>Başım dönüyor!</item></string-array>
     <string-array name="say_eel"><item>AAAH! Bir şey geliyor!</item><item>Kaç! KAÇ!</item><item>O da neydi?!</item></string-array>
-    <string-array name="say_fish"><item>Dikkat, balık!</item><item>Isırmasına izin verme!</item></string-array>
     <string-array name="say_almost"><item>Az kaldı!</item><item>Evi görüyorum!</item></string-array>
 </resources>

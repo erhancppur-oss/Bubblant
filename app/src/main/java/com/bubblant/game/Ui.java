@@ -64,6 +64,35 @@ public final class Ui {
         return l;
     }
 
+    /** Keep content clear of the status bar, camera cut-out and navigation bar (edge-to-edge on Android 15+). */
+    public static void padForSystemBars(View v) {
+        final int l = v.getPaddingLeft(), t = v.getPaddingTop(), r = v.getPaddingRight(), b = v.getPaddingBottom();
+        androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(v, (view, insets) -> {
+            androidx.core.graphics.Insets i = insets.getInsets(androidx.core.view.WindowInsetsCompat.Type.systemBars()
+                    | androidx.core.view.WindowInsetsCompat.Type.displayCutout());
+            view.setPadding(l + i.left, t + i.top, r + i.right, b + i.bottom);
+            return insets;
+        });
+        androidx.core.view.ViewCompat.requestApplyInsets(v);
+    }
+
+    /** Spinner adapter with dark text on the white field (the dark theme would make it white-on-white). */
+    public static android.widget.ArrayAdapter<String> spinnerAdapter(Context c, String[] items) {
+        return new android.widget.ArrayAdapter<String>(c, android.R.layout.simple_spinner_dropdown_item, items) {
+            @Override public View getView(int pos, View convert, android.view.ViewGroup parent) {
+                View v = super.getView(pos, convert, parent);
+                ((TextView) v).setTextColor(0xFF0D3B66);
+                return v;
+            }
+            @Override public View getDropDownView(int pos, View convert, android.view.ViewGroup parent) {
+                View v = super.getDropDownView(pos, convert, parent);
+                ((TextView) v).setTextColor(0xFF0D3B66);
+                v.setBackgroundColor(Color.WHITE);
+                return v;
+            }
+        };
+    }
+
     public static String worldName(Context c, int world) {
         String[] names = c.getResources().getStringArray(R.array.world_names);
         return names[Math.min(world, names.length - 1)];

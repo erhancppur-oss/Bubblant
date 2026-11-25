@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="game_complete">¡Superaste los 120 niveles! 🏆</string>
+
+    <string name="tip_urchin">Las cosas afiladas revientan la burbuja. ¡No las toques!</string>
+    <string name="tip_fish">Algo nada de un lado a otro. ¡Calcula tus movimientos!</string>
+    <string name="tip_whirl">Un desagüe o remolino te atrae. ¡Ve por el borde!</string>
+    <string name="tip_eel">Algo te persigue… ¡no te detengas!</string>
+    <string name="tip_dark">Está oscuro… sigue a las luciérnagas.</string>
+    <string name="tip_storm">¡La lluvia y los rayos sacudirán la burbuja!</string>
+
+    <string-array name="world_names">
+        <item>Charco del jardín</item>
+        <item>Fregadero</item>
+        <item>Bañera</item>
+        <item>Acuario</item>
+        <item>Estanque del jardín</item>
+        <item>Piscina</item>
+        <item>Fuente del parque</item>
+        <item>Arrozal</item>
+        <item>Charca de marea</item>
+        <item>Lago en tormenta</item>
+        <item>Alcantarilla</item>
+        <item>Sótano inundado</item>
+    </string-array>
+
+    <string-array name="world_stories">
+        <item>Tras la lluvia, la hormiga quedó atrapada en un charco. ¡Llévala a la hoja seca!</item>
+        <item>¡Uy! La hormiga cayó al fregadero. Cuidado con el grifo y el desagüe, ¡llega a la esponja!</item>
+        <item>¡Hora del baño! Los patitos de goma pasean y quitaron el tapón. ¡Llega a la jabonera!</item>
+        <item>La hormiga cayó al acuario. Los peces dorados son curiosos, el filtro empuja y la bomba hace burbujas.</item>
+        <item>Un estanque con viento. Ranas hambrientas miran desde los nenúfares…</item>
+        <item>¡La piscina está abierta! Los chorros te empujan y el robot limpiador no para.</item>
+        <item>La fuente del parque salpica por todas partes. Las monedas esperan en la isla de piedra.</item>
+        <item>Un arrozal inundado. El viento barre el agua, hay gambas y ranas por todas partes.</item>
+        <item>Marea baja en la playa. Los cangrejos patrullan, los erizos se esconden y llegan las olas.</item>
+        <item>¡Tormenta en el lago! Truenos, lluvia y pirañas salvajes. ¡Llega al tronco flotante!</item>
+        <item>Arrastrada a la alcantarilla. Está oscuro, hay ratas y la corriente es fuerte.</item>
+        <item>El sótano está inundado y es de noche. Algo está aquí abajo con nosotras… ¡encuentra la escalera!</item>
+    </string-array>
+
+    <string-array name="fail_causes">
+        <item>¡Chocaste demasiado fuerte!</item>
+        <item>¡Ay, algo afilado!</item>
+        <item>¡Chocó con la burbuja!</item>
+        <item>¡El remolino te tragó!</item>
+        <item>¡La burbuja se quedó sin aire!</item>
+        <item>¡Se acabó el tiempo!</item>
+        <item>¡Te atrapó!</item>
+    </string-array>
+
+    <string-array name="say_fish"><item>¡Cuidado!</item><item>¡Que no nos toque!</item><item>¡Ojo, que viene!</item></string-array>
+
+    <string name="set_ant_voice">🐜 Voz de la hormiga</string>
+    <string name="set_ant_lang">Idioma de la hormiga</string>
+    <string name="same_as_game">Igual que el juego</string>
+    <string name="set_accent">Acento</string>
+    <string name="set_voice_style">Tono de voz</string>
+    <string name="set_voice_pick">Voz</string>
+    <string name="voice_auto">Automática</string>
+    <string name="voice_n">Voz %d</string>
+    <string name="test_voice">🔊 Probar voz</string>
+    <string name="voice_missing">Este idioma no está instalado en la síntesis de voz del teléfono.</string>
+    <string name="install_voice">Instalar datos de voz</string>
+    <string-array name="voice_styles">
+        <item>Tierna (aguda)</item>
+        <item>Normal</item>
+        <item>Grave</item>
+    </string-array>
+</resources>

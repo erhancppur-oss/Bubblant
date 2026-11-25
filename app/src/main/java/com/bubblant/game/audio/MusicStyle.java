@@ -39,10 +39,10 @@ public enum MusicStyle {
     }
 
     public static MusicStyle forWorld(int world) {
-        switch (world) {
+        switch (com.bubblant.game.engine.WorldTheme.of(world).music) {
             case 0: return POND;
-            case 1: return RIVER;
-            case 2: return LAKE;
+            case 1: return LAKE;
+            case 2: return RIVER;
             case 3: return CAVE;
             case 4: return STORM;
             default: return ABYSS;

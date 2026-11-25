@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="game_complete">Tu as fini les 120 niveaux ! 🏆</string>
+
+    <string name="tip_urchin">Les objets pointus font éclater la bulle. Ne les touche pas !</string>
+    <string name="tip_fish">Quelque chose nage par ici. Choisis le bon moment !</string>
+    <string name="tip_whirl">Une bonde ou un tourbillon t\'aspire. Reste sur le bord !</string>
+    <string name="tip_eel">Quelque chose te poursuit… ne t\'arrête pas !</string>
+    <string name="tip_dark">Il fait noir… suis les lucioles.</string>
+    <string name="tip_storm">La pluie et les éclairs vont secouer la bulle !</string>
+
+    <string-array name="world_names">
+        <item>Flaque du jardin</item>
+        <item>Évier de cuisine</item>
+        <item>Baignoire</item>
+        <item>Aquarium</item>
+        <item>Bassin du jardin</item>
+        <item>Piscine</item>
+        <item>Fontaine du parc</item>
+        <item>Rizière</item>
+        <item>Mare de marée</item>
+        <item>Lac sous l\'orage</item>
+        <item>Égout pluvial</item>
+        <item>Cave inondée</item>
+    </string-array>
+
+    <string-array name="world_stories">
+        <item>Après la pluie, la fourmi est coincée dans une flaque. Amène-la à la feuille sèche !</item>
+        <item>Oups ! La fourmi a glissé dans l\'évier. Attention au robinet et à la bonde, rejoins l\'éponge !</item>
+        <item>C\'est l\'heure du bain ! Les canards en plastique se promènent et la bonde est ouverte. Rejoins le porte-savon !</item>
+        <item>La fourmi est tombée dans l\'aquarium. Les poissons rouges sont curieux, le filtre pousse, la pompe fait des bulles.</item>
+        <item>Un bassin venteux. Des grenouilles affamées guettent sur les nénuphars…</item>
+        <item>La piscine est ouverte ! Les jets te poussent et le robot nettoyeur ne s\'arrête jamais.</item>
+        <item>La fontaine éclabousse partout. Les pièces à vœux attendent sur l\'îlot de pierre.</item>
+        <item>Une rizière inondée. Le vent balaie l\'eau, crevettes et grenouilles partout.</item>
+        <item>Marée basse sur la plage. Les crabes patrouillent, les oursins se cachent et les vagues arrivent.</item>
+        <item>Orage sur le lac ! Tonnerre, pluie et piranhas déchaînés. Rejoins le tronc flottant !</item>
+        <item>Emportée dans l\'égout. Il fait noir, il y a des rats et le courant est fort.</item>
+        <item>La cave est inondée et il fait nuit. Quelque chose est en bas avec nous… trouve l\'escalier !</item>
+    </string-array>
+
+    <string-array name="fail_causes">
+        <item>Choc trop violent contre le mur !</item>
+        <item>Aïe, quelque chose de pointu !</item>
+        <item>Ça a heurté la bulle !</item>
+        <item>Aspirée par le tourbillon !</item>
+        <item>La bulle n\'a plus d\'air !</item>
+        <item>Temps écoulé !</item>
+        <item>Ça t\'a attrapée !</item>
+    </string-array>
+
+    <string-array name="say_fish"><item>Attention !</item><item>Qu\'il ne nous touche pas !</item><item>Attention, ça arrive !</item></string-array>
+
+    <string name="set_ant_voice">🐜 Voix de la fourmi</string>
+    <string name="set_ant_lang">Langue de la fourmi</string>
+    <string name="same_as_game">Comme le jeu</string>
+    <string name="set_accent">Accent</string>
+    <string name="set_voice_style">Ton de voix</string>
+    <string name="set_voice_pick">Voix</string>
+    <string name="voice_auto">Automatique</string>
+    <string name="voice_n">Voix %d</string>
+    <string name="test_voice">🔊 Tester la voix</string>
+    <string name="voice_missing">Cette langue n\'est pas installée dans la synthèse vocale du téléphone.</string>
+    <string name="install_voice">Installer les données vocales</string>
+    <string-array name="voice_styles">
+        <item>Mignonne (aiguë)</item>
+        <item>Normale</item>
+        <item>Grave</item>
+    </string-array>
+</resources>

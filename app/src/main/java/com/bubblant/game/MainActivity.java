@@ -54,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
         FrameLayout.LayoutParams blp = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT, Gravity.BOTTOM);
         root.addView(banner, blp);
         setContentView(root);
+        Ui.padForSystemBars(col);
+        Ui.padForSystemBars(banner);
 
         AdManager.gatherConsent(this);
         AdManager.loadBanner(this, banner);

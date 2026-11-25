@@ -219,7 +219,7 @@ public final class Level {
         for (int i : eelCand) {
             if (placed >= spec.eels) break;
             if (used.contains(i) || safe.contains(i) || fromStart[i] < 4) continue;
-            eels.add(new Eel(cx(i), cy(i), 88f + spec.number * 0.6f));
+            eels.add(new Eel(cx(i), cy(i), spec.chaserSpeed));
             used.add(i);
             placed++;
         }

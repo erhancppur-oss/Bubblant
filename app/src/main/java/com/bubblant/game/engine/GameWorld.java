@@ -62,6 +62,8 @@ public final class GameWorld {
     private float tickTimer;
     public float viewL, viewT, viewR, viewB;
     public boolean revived;
+    /** how long the "get ready" intro lasts (longer when there is a story or tip to read) */
+    public float readyTime = 1.6f;
 
     public GameWorld(Level level, Phrases phrases, Listener listener) {
         this.level = level;
@@ -99,7 +101,7 @@ public final class GameWorld {
 
         switch (state) {
             case READY:
-                if (stateTime > 1.6f) {
+                if (stateTime > readyTime) {
                     state = State.PLAYING;
                     stateTime = 0;
                 }
@@ -326,6 +328,7 @@ public final class GameWorld {
         finishedSent = false;
         popCause = -1;
         revived = true;
+        readyTime = 1.6f;
         ant.onRevive();
     }
 

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="game_complete">Du hast alle 120 Level geschafft! 🏆</string>
+
+    <string name="tip_urchin">Spitze Dinge lassen die Blase platzen. Nicht berühren!</string>
+    <string name="tip_fish">Hier schwimmt etwas hin und her. Gutes Timing!</string>
+    <string name="tip_whirl">Ein Abfluss oder Strudel zieht dich hinein. Bleib am Rand!</string>
+    <string name="tip_eel">Etwas jagt dich… bleib in Bewegung!</string>
+    <string name="tip_dark">Es ist dunkel… folge den Glühwürmchen.</string>
+    <string name="tip_storm">Regentropfen und Blitze schütteln die Blase durch!</string>
+
+    <string-array name="world_names">
+        <item>Gartenpfütze</item>
+        <item>Spülbecken</item>
+        <item>Badewanne</item>
+        <item>Aquarium</item>
+        <item>Gartenteich</item>
+        <item>Schwimmbad</item>
+        <item>Parkbrunnen</item>
+        <item>Reisfeld</item>
+        <item>Gezeitentümpel</item>
+        <item>Gewittersee</item>
+        <item>Regenkanal</item>
+        <item>Überfluteter Keller</item>
+    </string-array>
+
+    <string-array name="world_stories">
+        <item>Nach dem Regen steckt die Ameise in einer Pfütze fest. Bring sie zum trockenen Blatt!</item>
+        <item>Hoppla! Die Ameise ist ins Spülbecken gespült worden. Vorsicht vor Wasserhahn und Abfluss, erreiche den Schwamm!</item>
+        <item>Badezeit! Quietscheentchen fahren herum und der Stöpsel ist raus. Erreiche die Seifenschale!</item>
+        <item>Die Ameise ist ins Aquarium gefallen. Goldfische sind neugierig, der Filter drückt, die Pumpe macht Luftblasen.</item>
+        <item>Ein windiger Gartenteich. Hungrige Frösche lauern auf den Seerosen…</item>
+        <item>Das Schwimmbad ist offen! Düsen schieben dich herum und der Putzroboter hört nie auf.</item>
+        <item>Der Parkbrunnen spritzt überall. Glücksmünzen warten auf der Steininsel.</item>
+        <item>Ein überflutetes Reisfeld. Der Wind fegt übers Wasser, überall Garnelen und Frösche.</item>
+        <item>Ebbe am Strand. Krabben patrouillieren, Seeigel verstecken sich und Wellen rollen heran.</item>
+        <item>Sturm auf dem See! Donner, Regen und wilde Piranhas. Erreiche den Baumstamm!</item>
+        <item>In den Regenkanal gespült. Es ist dunkel, Ratten sind unterwegs und die Strömung ist stark.</item>
+        <item>Der Keller ist überflutet und es ist Nacht. Etwas ist hier unten bei uns… finde die Treppe!</item>
+    </string-array>
+
+    <string-array name="fail_causes">
+        <item>Zu hart gegen die Wand!</item>
+        <item>Autsch, etwas Spitzes!</item>
+        <item>Es hat die Blase gerammt!</item>
+        <item>Vom Strudel verschluckt!</item>
+        <item>Der Blase ging die Luft aus!</item>
+        <item>Die Zeit ist um!</item>
+        <item>Es hat dich erwischt!</item>
+    </string-array>
+
+    <string-array name="say_fish"><item>Vorsicht!</item><item>Lass es uns nicht berühren!</item><item>Achtung, es kommt!</item></string-array>
+
+    <string name="set_ant_voice">🐜 Ameisenstimme</string>
+    <string name="set_ant_lang">Sprache der Ameise</string>
+    <string name="same_as_game">Wie das Spiel</string>
+    <string name="set_accent">Akzent</string>
+    <string name="set_voice_style">Stimmlage</string>
+    <string name="set_voice_pick">Stimme</string>
+    <string name="voice_auto">Automatisch</string>
+    <string name="voice_n">Stimme %d</string>
+    <string name="test_voice">🔊 Stimme testen</string>
+    <string name="voice_missing">Diese Sprache ist in der Sprachausgabe deines Handys nicht installiert.</string>
+    <string name="install_voice">Sprachdaten installieren</string>
+    <string-array name="voice_styles">
+        <item>Niedlich (hoch)</item>
+        <item>Normal</item>
+        <item>Tief</item>
+    </string-array>
+</resources>

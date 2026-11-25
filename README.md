@@ -1,10 +1,10 @@
 # Bubblant 🫧🐜
 
-A tilt-controlled Android game: the whole screen is water, a tiny air bubble floats on it and a living ant stands on top. Tilt the phone to carry the ant through 60 maze levels to a safe lily pad — but bump a wall too fast and the bubble pops!
+A tilt-controlled Android game: the whole screen is water, a tiny air bubble floats on it and a living ant stands on top. Tilt the phone to carry the ant through 120 maze levels to a safe lily pad — but bump a wall too fast and the bubble pops!
 
 ## Features
-- **60 levels in 6 worlds** (Sunny Pond → Lazy River → Windy Lake → Dark Cave → Thunder Storm → The Abyss), generated deterministically and verified solvable by unit tests.
-- **Talking ant**: gives directions (left/right/up/down), shakes its head and says "other way!" when you go wrong, gets angry if you keep ignoring it, gives a 👍 when you do well, thanks you at the end. Speech bubbles + real voice (text-to-speech).
+- **120 levels in 12 real-life worlds** (garden puddle, kitchen sink, bathtub, aquarium, garden pond, swimming pool, park fountain, rice paddy, tide pool, thunderstorm lake, storm drain, flooded basement), generated deterministically and verified solvable by unit tests.
+- **Talking ant**: gives directions (left/right/up/down), shakes its head and says "other way!" when you go wrong, gets angry if you keep ignoring it, gives a 👍 when you do well, thanks you at the end. Speech bubbles + real voice (text-to-speech). The ant's language, accent, voice and pitch are selectable.
 - **Hazards**: fragile bubble (speed-based popping), sea urchins, patrolling fish / piranhas, water currents, wind and gusts, whirlpools, rain ripples, lightning, darkness, hunting eels.
 - **Special levels**: rescue other ants stranded on leaves (they ride on your bubble), shrinking (leaking) bubble with O₂ pickups, race against the clock.
 - **Procedural music**: cheerful in the pond, adventurous on the river, mysterious in the cave, action in the storm, horror in the abyss — with extra tension when time or air is running out. No audio files, no licensing issues.

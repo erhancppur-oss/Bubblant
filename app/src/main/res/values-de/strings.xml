@@ -30,7 +30,6 @@
     <string name="talk_on">Ameise spricht: An</string>
     <string name="talk_off">Ameise spricht: Aus</string>
     <string name="level_complete">Sicher angekommen!</string>
-    <string name="game_complete">Du hast alle 60 Level geschafft! 🏆</string>
     <string name="result_line">Zucker: %1$d/3 · Zeit: %2$ds</string>
     <string name="new_hat">🎩 Neuer Hut! Schau in die Einstellungen.</string>
     <string name="next">Weiter ▶</string>
@@ -42,35 +41,11 @@
 
     <string name="tip_tilt">Sanft kippen! Zu schnell gegen die Wand und die Blase platzt.</string>
     <string name="tip_touch">Halte den Finger dorthin, wo die Blase hin soll.</string>
-    <string name="tip_urchin">Seeigel sind stachelig. Nicht berühren!</string>
     <string name="tip_rescue">Ein Freund sitzt auf einem Blatt fest! Hol ihn ab.</string>
     <string name="tip_shrink">Die Blase verliert Luft! Sammle O₂-Blasen und beeil dich.</string>
-    <string name="tip_fish">Hungrige Fische patrouillieren hier. Gutes Timing!</string>
     <string name="tip_current">Strömungen schieben dich. Nutze sie oder kämpfe dagegen!</string>
     <string name="tip_timed">Rennen gegen die Zeit!</string>
     <string name="tip_wind">Wind weht über den See. Achtung vor Böen!</string>
-    <string name="tip_dark">Die Höhle ist dunkel… folge den Glühwürmchen.</string>
-    <string name="tip_whirl">Strudel ziehen dich hinein. Bleib am Rand!</string>
-    <string name="tip_storm">Ein Sturm! Regen und Blitze schütteln dich durch.</string>
-    <string name="tip_eel">Etwas jagt im Abgrund… bleib in Bewegung!</string>
-
-    <string-array name="world_names">
-        <item>Sonniger Teich</item>
-        <item>Fauler Fluss</item>
-        <item>Windiger See</item>
-        <item>Dunkle Höhle</item>
-        <item>Gewittersturm</item>
-        <item>Der Abgrund</item>
-    </string-array>
-    <string-array name="fail_causes">
-        <item>Zu hart gegen die Wand!</item>
-        <item>Autsch, Stacheln!</item>
-        <item>Ein Fisch hat zugebissen!</item>
-        <item>Vom Strudel verschluckt!</item>
-        <item>Der Blase ging die Luft aus!</item>
-        <item>Die Zeit ist um!</item>
-        <item>Der Aal hat dich erwischt!</item>
-    </string-array>
     <string-array name="hat_names">
         <item>Keiner</item>
         <item>Kappe</item>
@@ -101,6 +76,5 @@
     <string-array name="say_start"><item>Los geht\'s!</item><item>Bring mich bitte nach Hause!</item><item>Bereit? Kippen!</item></string-array>
     <string-array name="say_whirl"><item>Strudel! Weg hier!</item><item>Mir wird schwindelig!</item></string-array>
     <string-array name="say_eel"><item>AAAH! Da kommt was!</item><item>Lauf! LAUF!</item><item>Was war das?!</item></string-array>
-    <string-array name="say_fish"><item>Vorsicht, ein Fisch!</item><item>Lass ihn nicht beißen!</item></string-array>
     <string-array name="say_almost"><item>Fast geschafft!</item><item>Ich sehe mein Zuhause!</item></string-array>
 </resources>

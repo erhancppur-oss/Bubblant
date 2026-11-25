@@ -30,7 +30,6 @@
     <string name="talk_on">Hormiga habla: Sí</string>
     <string name="talk_off">Hormiga habla: No</string>
     <string name="level_complete">¡Sana y salva!</string>
-    <string name="game_complete">¡Superaste los 60 niveles! 🏆</string>
     <string name="result_line">Azúcar: %1$d/3 · Tiempo: %2$ds</string>
     <string name="new_hat">🎩 ¡Nuevo sombrero! Míralo en Ajustes.</string>
     <string name="next">Siguiente ▶</string>
@@ -42,35 +41,11 @@
 
     <string name="tip_tilt">¡Inclina con cuidado! Si chocas rápido, la burbuja explota.</string>
     <string name="tip_touch">Mantén el dedo donde quieras que vaya la burbuja.</string>
-    <string name="tip_urchin">Los erizos pinchan. ¡No los toques!</string>
     <string name="tip_rescue">¡Una amiga está atrapada en una hoja! Recógela antes de volver.</string>
     <string name="tip_shrink">¡La burbuja pierde aire! Coge burbujas de O₂ y date prisa.</string>
-    <string name="tip_fish">Peces hambrientos patrullan aquí. ¡Calcula tus movimientos!</string>
     <string name="tip_current">Las corrientes te empujan. ¡Úsalas o lucha contra ellas!</string>
     <string name="tip_timed">¡Carrera contra el reloj!</string>
     <string name="tip_wind">Sopla el viento en el lago. ¡Cuidado con las ráfagas!</string>
-    <string name="tip_dark">La cueva está oscura… sigue a las luciérnagas.</string>
-    <string name="tip_whirl">Los remolinos te tragan. ¡Ve por el borde!</string>
-    <string name="tip_storm">¡Tormenta! La lluvia y los rayos te sacudirán.</string>
-    <string name="tip_eel">Algo caza en el abismo… ¡no te detengas!</string>
-
-    <string-array name="world_names">
-        <item>Estanque Soleado</item>
-        <item>Río Tranquilo</item>
-        <item>Lago Ventoso</item>
-        <item>Cueva Oscura</item>
-        <item>Gran Tormenta</item>
-        <item>El Abismo</item>
-    </string-array>
-    <string-array name="fail_causes">
-        <item>¡Chocaste demasiado fuerte!</item>
-        <item>¡Ay, pinchos!</item>
-        <item>¡Un pez mordió la burbuja!</item>
-        <item>¡El remolino te tragó!</item>
-        <item>¡La burbuja se quedó sin aire!</item>
-        <item>¡Se acabó el tiempo!</item>
-        <item>¡La anguila te atrapó!</item>
-    </string-array>
     <string-array name="hat_names">
         <item>Nada</item>
         <item>Gorra</item>
@@ -101,6 +76,5 @@
     <string-array name="say_start"><item>¡Vamos!</item><item>¡Llévame a casa, por favor!</item><item>¿Listo? ¡Inclina!</item></string-array>
     <string-array name="say_whirl"><item>¡Remolino! ¡Aléjate!</item><item>¡Me mareo!</item></string-array>
     <string-array name="say_eel"><item>¡AAAH! ¡Algo viene!</item><item>¡Corre! ¡CORRE!</item><item>¿¡Qué fue eso!?</item></string-array>
-    <string-array name="say_fish"><item>¡Cuidado, un pez!</item><item>¡Que no muerda!</item></string-array>
     <string-array name="say_almost"><item>¡Ya casi!</item><item>¡Veo mi casa!</item></string-array>
 </resources>

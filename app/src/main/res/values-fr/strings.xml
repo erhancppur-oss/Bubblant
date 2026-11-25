@@ -30,7 +30,6 @@
     <string name="talk_on">La fourmi parle : Oui</string>
     <string name="talk_off">La fourmi parle : Non</string>
     <string name="level_complete">Saine et sauve !</string>
-    <string name="game_complete">Tu as fini les 60 niveaux ! 🏆</string>
     <string name="result_line">Sucre : %1$d/3 · Temps : %2$ds</string>
     <string name="new_hat">🎩 Nouveau chapeau ! Va voir les paramètres.</string>
     <string name="next">Suivant ▶</string>
@@ -42,35 +41,11 @@
 
     <string name="tip_tilt">Penche doucement ! Un choc trop rapide fait éclater la bulle.</string>
     <string name="tip_touch">Garde le doigt là où la bulle doit aller.</string>
-    <string name="tip_urchin">Les oursins piquent. Ne les touche pas !</string>
     <string name="tip_rescue">Une amie est coincée sur une feuille ! Récupère-la.</string>
     <string name="tip_shrink">La bulle fuit ! Attrape des bulles d\'O₂ et dépêche-toi.</string>
-    <string name="tip_fish">Des poissons affamés patrouillent. Choisis le bon moment !</string>
     <string name="tip_current">Les courants te poussent. Utilise-les ou résiste !</string>
     <string name="tip_timed">Course contre la montre !</string>
     <string name="tip_wind">Le vent souffle sur le lac. Attention aux rafales !</string>
-    <string name="tip_dark">La grotte est sombre… suis les lucioles.</string>
-    <string name="tip_whirl">Les tourbillons t\'aspirent. Reste sur le bord !</string>
-    <string name="tip_storm">Une tempête ! La pluie et les éclairs vont te secouer.</string>
-    <string name="tip_eel">Quelque chose chasse dans les abysses… ne t\'arrête pas !</string>
-
-    <string-array name="world_names">
-        <item>Mare Ensoleillée</item>
-        <item>Rivière Paresseuse</item>
-        <item>Lac Venteux</item>
-        <item>Grotte Sombre</item>
-        <item>Orage</item>
-        <item>Les Abysses</item>
-    </string-array>
-    <string-array name="fail_causes">
-        <item>Choc trop violent contre le mur !</item>
-        <item>Aïe, des piquants !</item>
-        <item>Un poisson a mordu la bulle !</item>
-        <item>Aspirée par le tourbillon !</item>
-        <item>La bulle n\'a plus d\'air !</item>
-        <item>Temps écoulé !</item>
-        <item>L\'anguille t\'a eue !</item>
-    </string-array>
     <string-array name="hat_names">
         <item>Aucun</item>
         <item>Casquette</item>
@@ -101,6 +76,5 @@
     <string-array name="say_start"><item>C\'est parti !</item><item>Ramène-moi à la maison !</item><item>Prêt ? Penche !</item></string-array>
     <string-array name="say_whirl"><item>Tourbillon ! Éloigne-toi !</item><item>J\'ai le tournis !</item></string-array>
     <string-array name="say_eel"><item>AAAH ! Quelque chose arrive !</item><item>Cours ! COURS !</item><item>C\'était quoi ça ?!</item></string-array>
-    <string-array name="say_fish"><item>Attention, un poisson !</item><item>Ne le laisse pas mordre !</item></string-array>
     <string-array name="say_almost"><item>Presque !</item><item>Je vois la maison !</item></string-array>
 </resources>
