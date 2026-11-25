@@ -54,6 +54,7 @@
         <item>Pirate</item>
         <item>Crown</item>
         <item>Wizard</item>
+        <item>Hero</item>
     </string-array>
 
     <!-- What the ant says -->

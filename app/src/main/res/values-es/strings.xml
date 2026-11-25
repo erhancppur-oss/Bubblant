@@ -53,6 +53,7 @@
         <item>Pirata</item>
         <item>Corona</item>
         <item>Mago</item>
+        <item>Héroe</item>
     </string-array>
 
     <string-array name="say_left"><item>¡Izquierda!</item><item>¡Ve a la izquierda!</item><item>¡Izquierda, izquierda!</item></string-array>

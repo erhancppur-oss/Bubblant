@@ -18,9 +18,13 @@ import com.bubblant.game.engine.AntBrain;
  * The ant keeps its personality: it points, shakes its head, gets angry, gives a thumbs up.
  */
 public final class AntPainter {
-    public static final int HAT_COUNT = 6;
-    /** stars needed to unlock each hat */
-    public static final int[] HAT_STARS = {0, 20, 60, 120, 200, 300};
+    public static final int HAT_COUNT = 7;
+    public static final int HAT_HERO = 6;
+    /** stars needed to unlock each hat (the hero costume is unlocked early, it is the ant's signature look) */
+    public static final int[] HAT_STARS = {0, 20, 60, 120, 200, 300, 10};
+
+    /** When drawing without a brain (icons, menus): raise a front leg towards this angle (radians). */
+    public float heroPointAngle = Float.NaN;
 
     /** body colors: [dark, mid, highlight] for each variant */
     private static final int[][] SKIN = {
@@ -71,6 +75,8 @@ public final class AntPainter {
 
         // ---- far-side legs (behind the body)
         drawLegs(c, s, sk, alpha, walk * legSpeed, legAmp, true, brain, flail, facing);
+
+        if (hat == HAT_HERO) drawCape(c, s, alpha, t);
 
         // ---- gaster (abdomen)
         c.save();
@@ -155,6 +161,8 @@ public final class AntPainter {
         fill.setShader(null);
         c.restore();
 
+        if (hat == HAT_HERO) drawMask(c, s, alpha, t);
+
         // mandibles (open when talking or angry)
         boolean talking = brain != null && brain.speechTimer > 0 && Math.sin(t * 20) > 0;
         float open = (talking || angry || flail) ? 14f : 3f;
@@ -187,10 +195,10 @@ public final class AntPainter {
             c.drawLine(ex - er, ey - er, ex + er, ey + er, stroke);
             c.drawLine(ex - er, ey + er, ex + er, ey - er, stroke);
         } else {
-            if (scared) {
+            if (scared || hat == HAT_HERO) {
                 fill.setColor(Color.WHITE);
                 fill.setAlpha(alpha);
-                c.drawCircle(ex, ey, er * 1.35f, fill);
+                c.drawCircle(ex, ey, er * (scared ? 1.35f : 1.3f), fill);
             }
             fill.setShader(new RadialGradient(ex - er * 0.3f, ey - er * 0.3f, er * 1.3f,
                     new int[]{0xFF4A4A55, 0xFF050508}, null, Shader.TileMode.CLAMP));
@@ -261,10 +269,11 @@ public final class AntPainter {
             float lift = Math.max(0, (float) Math.cos(phase)) * amp * (flail ? 2.5f : 1.2f);
             float footY = -lift;
             float attX = ax[i], attY = -0.5f;
-            boolean pointing = !far && i == 0 && brain != null && brain.pointTimer > 0 && !flail;
+            boolean pointing = !far && i == 0 && (brain != null ? brain.pointTimer > 0 : !Float.isNaN(heroPointAngle)) && !flail;
             if (pointing) {
-                float dirX = (float) Math.cos(brain.pointAngle) * Math.signum(facing == 0 ? 1 : facing);
-                float dirY = (float) Math.sin(brain.pointAngle);
+                float pa = brain != null ? brain.pointAngle : heroPointAngle;
+                float dirX = (float) Math.cos(pa) * Math.signum(facing == 0 ? 1 : facing);
+                float dirY = (float) Math.sin(pa);
                 float kx = attX + 0.22f, ky = -0.78f;
                 float tx = kx + dirX * 0.45f, ty = ky + dirY * 0.45f - 0.08f;
                 drawLeg(c, s, col, a, attX, attY, kx, ky, tx, ty, true);
@@ -319,8 +328,51 @@ public final class AntPainter {
         c.drawCircle(tx * s, ty * s, s * 0.035f, fill);         // club
     }
 
+    /** Superhero cape flowing back from the shoulders. */
+    private void drawCape(Canvas c, float s, int alpha, float t) {
+        float w1 = (float) Math.sin(t * 5) * 0.06f, w2 = (float) Math.sin(t * 5 + 1.4f) * 0.08f;
+        path.reset();
+        path.moveTo(0.24f * s, -0.7f * s);
+        path.cubicTo(-0.1f * s, -0.95f * s, -0.6f * s, (-1.05f + w1) * s, -1.25f * s, (-0.98f + w2) * s);
+        path.quadTo(-1.18f * s, (-0.82f + w1) * s, -1.32f * s, (-0.7f + w2) * s);
+        path.quadTo(-1.05f * s, (-0.72f + w1) * s, -0.95f * s, (-0.6f + w2) * s);
+        path.cubicTo(-0.5f * s, -0.72f * s, -0.1f * s, -0.62f * s, 0.2f * s, -0.58f * s);
+        path.close();
+        fill.setShader(new LinearGradient(0, -1.0f * s, 0, -0.6f * s, 0xFFFF5252, 0xFFB71C1C, Shader.TileMode.CLAMP));
+        fill.setAlpha(alpha);
+        c.drawPath(path, fill);
+        fill.setShader(null);
+        stroke.setColor(0xFF7F0000);
+        stroke.setAlpha(alpha);
+        stroke.setStrokeWidth(s * 0.02f);
+        c.drawPath(path, stroke);
+        // collar clasp
+        fill.setColor(0xFFFFD54F);
+        fill.setAlpha(alpha);
+        c.drawCircle(0.22f * s, -0.66f * s, 0.05f * s, fill);
+    }
+
+    /** Hero mask over the eye, with two little ribbons at the back of the head. */
+    private void drawMask(Canvas c, float s, int alpha, float t) {
+        float wob = (float) Math.sin(t * 7) * 0.03f;
+        fill.setColor(0xFF1A237E);
+        fill.setAlpha(alpha);
+        rect.set(0.33f * s, -0.86f * s, 0.67f * s, -0.68f * s);
+        c.drawRoundRect(rect, 0.09f * s, 0.09f * s, fill);
+        path.reset();
+        path.moveTo(0.34f * s, -0.8f * s);
+        path.lineTo(0.14f * s, (-0.9f + wob) * s);
+        path.lineTo(0.17f * s, (-0.8f + wob) * s);
+        path.close();
+        path.moveTo(0.34f * s, -0.76f * s);
+        path.lineTo(0.12f * s, (-0.74f - wob) * s);
+        path.lineTo(0.18f * s, (-0.68f - wob) * s);
+        path.close();
+        c.drawPath(path, fill);
+    }
+
     private void drawHat(Canvas c, int hat, float s, int alpha) {
-        if (hat <= 0) return;
+        if (hat <= 0 || hat == HAT_HERO) return;
         float hx = 0.44f * s, hy = -0.88f * s, hr = 0.2f * s;
         c.save();
         c.translate(hx, hy);

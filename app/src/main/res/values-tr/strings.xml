@@ -53,6 +53,7 @@
         <item>Korsan</item>
         <item>Taç</item>
         <item>Büyücü</item>
+        <item>Kahraman</item>
     </string-array>
 
     <string-array name="say_left"><item>Sola!</item><item>Sola git!</item><item>Sol, sol!</item></string-array>
